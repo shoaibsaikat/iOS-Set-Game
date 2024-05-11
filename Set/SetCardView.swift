@@ -13,7 +13,7 @@ class SetCardView: UIView {
     var shape = "■"
     var number = 3
     var textColor = UIColor.red
-    var shading = SetCard.Shading.Blank
+    var shade = SetCard.Shade.Blank
     var text: String = ""
     
     func generateNumberedText(with shape: String, amount number: Int) -> String {
@@ -24,11 +24,11 @@ class SetCardView: UIView {
         return text
     }
     
-    func setCard(withText shape: String, number: Int, withColor color: UIColor, withBackground shading: SetCard.Shading) {
+    func setCard(withText shape: String, number: Int, withColor color: UIColor, withBackground shading: SetCard.Shade) {
         self.shape = shape
         self.number = number
         self.textColor = color
-        self.shading = shading
+        self.shade = shading
         
         text = generateNumberedText(with: shape, amount: number)
     }
@@ -39,11 +39,11 @@ class SetCardView: UIView {
             text = generateNumberedText(with: shape, amount: number)
             
             let card = UIBezierPath(roundedRect: bounds, cornerRadius: 7.0)
-            switch shading {
-            case SetCard.Shading.Fill:
+            switch shade {
+            case SetCard.Shade.Fill:
                 UIColor.systemGray.setFill()
                 card.fill()
-            case SetCard.Shading.Blank:
+            case SetCard.Shade.Blank:
                 UIColor.black.setStroke()
                 card.stroke()
             default:
