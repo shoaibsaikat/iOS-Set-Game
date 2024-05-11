@@ -11,9 +11,8 @@ import UIKit
 class SetCardView: UIView {
     override func draw(_ rect: CGRect) {
         let card = UIBezierPath(roundedRect: bounds, cornerRadius: 5.0)
-        UIColor.systemGray5.setFill()
         UIColor.black.setStroke()
-        card.fill()
+        card.stroke()
         
         let font = UIFontMetrics(forTextStyle: .body).scaledFont(for: UIFont.preferredFont(forTextStyle: .body).withSize(26.0))
         let cardLabel = NSAttributedString(string: "■", attributes: [.font: font, .foregroundColor: UIColor.red])
@@ -21,4 +20,7 @@ class SetCardView: UIView {
         cardLabel.draw(in: labelRect)
     }
 
+    @objc func cardTapped(gesture: UITapGestureRecognizer) {
+        self.backgroundColor = UIColor.green
+    }
 }

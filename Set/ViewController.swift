@@ -14,7 +14,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
 //        ▲ ● ■
     }
-
-
+    @IBOutlet var cards: [SetCardView]! {
+        didSet {
+            for card in cards {
+                let tap = UITapGestureRecognizer(target: card, action: #selector(card.cardTapped(gesture:)))
+                card.addGestureRecognizer(tap)
+            }
+        }
+    }
 }
 

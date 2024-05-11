@@ -17,122 +17,123 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cge-Dh-8wR" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="65" y="44" width="66" height="86"/>
+                                <rect key="frame" x="65" y="44" width="66" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wIs-26-FHu" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="138" y="44" width="66" height="86"/>
+                                <rect key="frame" x="138" y="44" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E5Q-zI-iay" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="211" y="44" width="66" height="86"/>
+                                <rect key="frame" x="211" y="44" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g79-Uj-tNd" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="284" y="44" width="66" height="86"/>
+                                <rect key="frame" x="284" y="44" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n54-Ic-qNq" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="65" y="146" width="66" height="86"/>
+                                <rect key="frame" x="65" y="146" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G0u-bL-9yi" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="138" y="146" width="66" height="86"/>
+                                <rect key="frame" x="138" y="146" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7wK-dD-Jbf" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="211" y="146" width="66" height="86"/>
+                                <rect key="frame" x="211" y="146" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SdK-Je-Zmm" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="284" y="146" width="66" height="86"/>
+                                <rect key="frame" x="284" y="146" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1tx-3b-u5Z" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="65" y="249" width="66" height="86"/>
+                                <rect key="frame" x="65" y="249" width="65" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ok0-pP-xZL" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="138" y="249" width="66" height="86"/>
+                                <rect key="frame" x="138" y="249" width="65" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TuW-bd-IDr" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="211" y="249" width="66" height="86"/>
+                                <rect key="frame" x="211" y="249" width="65" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSu-jc-1d6" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="284" y="249" width="66" height="86"/>
+                                <rect key="frame" x="284" y="249" width="65" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VH9-Tt-Psv" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="65" y="352" width="66" height="86"/>
+                                <rect key="frame" x="65" y="352" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFe-Qk-GGq" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="138" y="352" width="66" height="86"/>
+                                <rect key="frame" x="138" y="352" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CMC-rF-eKd" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="211" y="352" width="66" height="86"/>
+                                <rect key="frame" x="211" y="352" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s1B-Sm-KBf" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="284" y="352" width="66" height="86"/>
+                                <rect key="frame" x="284" y="352" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fJj-rs-eLF" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="65" y="454" width="66" height="86"/>
+                                <rect key="frame" x="65" y="454" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WqQ-yh-dyg" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="138" y="454" width="66" height="86"/>
+                                <rect key="frame" x="138" y="454" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wod-Ph-BJm" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="211" y="454" width="66" height="86"/>
+                                <rect key="frame" x="211" y="454" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rqk-WY-ApK" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="284" y="454" width="66" height="86"/>
+                                <rect key="frame" x="284" y="454" width="65" height="86.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lNt-mc-dVt" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="65" y="557" width="66" height="86"/>
+                                <rect key="frame" x="65" y="557" width="65" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Urg-G6-NC5" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="138" y="557" width="66" height="86"/>
+                                <rect key="frame" x="138" y="557" width="65" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aam-2n-GhO" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="211" y="557" width="66" height="86"/>
+                                <rect key="frame" x="211" y="557" width="65" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VdY-UT-djb" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                <rect key="frame" x="284" y="557" width="66" height="86"/>
+                                <rect key="frame" x="284" y="557" width="65" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -140,6 +141,32 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outletCollection property="cards" destination="Cge-Dh-8wR" collectionClass="NSMutableArray" id="9gT-E9-WpL"/>
+                        <outletCollection property="cards" destination="wIs-26-FHu" collectionClass="NSMutableArray" id="vpk-mG-TlU"/>
+                        <outletCollection property="cards" destination="E5Q-zI-iay" collectionClass="NSMutableArray" id="pRy-Nm-Vet"/>
+                        <outletCollection property="cards" destination="g79-Uj-tNd" collectionClass="NSMutableArray" id="P0V-H3-i9Q"/>
+                        <outletCollection property="cards" destination="n54-Ic-qNq" collectionClass="NSMutableArray" id="Ba3-mg-x5k"/>
+                        <outletCollection property="cards" destination="G0u-bL-9yi" collectionClass="NSMutableArray" id="1AT-YY-tNS"/>
+                        <outletCollection property="cards" destination="7wK-dD-Jbf" collectionClass="NSMutableArray" id="L9C-oA-bs6"/>
+                        <outletCollection property="cards" destination="SdK-Je-Zmm" collectionClass="NSMutableArray" id="sNR-Tt-Uak"/>
+                        <outletCollection property="cards" destination="1tx-3b-u5Z" collectionClass="NSMutableArray" id="Xht-FL-7kg"/>
+                        <outletCollection property="cards" destination="Ok0-pP-xZL" collectionClass="NSMutableArray" id="y80-R5-9Td"/>
+                        <outletCollection property="cards" destination="TuW-bd-IDr" collectionClass="NSMutableArray" id="L15-Lb-SQl"/>
+                        <outletCollection property="cards" destination="oSu-jc-1d6" collectionClass="NSMutableArray" id="jfy-9G-02x"/>
+                        <outletCollection property="cards" destination="VH9-Tt-Psv" collectionClass="NSMutableArray" id="gSP-xl-EOu"/>
+                        <outletCollection property="cards" destination="cFe-Qk-GGq" collectionClass="NSMutableArray" id="dgD-gh-jJF"/>
+                        <outletCollection property="cards" destination="CMC-rF-eKd" collectionClass="NSMutableArray" id="VDa-4p-imt"/>
+                        <outletCollection property="cards" destination="s1B-Sm-KBf" collectionClass="NSMutableArray" id="gYc-R2-Vfc"/>
+                        <outletCollection property="cards" destination="fJj-rs-eLF" collectionClass="NSMutableArray" id="wWI-yJ-rJK"/>
+                        <outletCollection property="cards" destination="WqQ-yh-dyg" collectionClass="NSMutableArray" id="h0d-Uu-aAl"/>
+                        <outletCollection property="cards" destination="wod-Ph-BJm" collectionClass="NSMutableArray" id="kbX-f4-Mia"/>
+                        <outletCollection property="cards" destination="Rqk-WY-ApK" collectionClass="NSMutableArray" id="FCZ-nL-8bO"/>
+                        <outletCollection property="cards" destination="lNt-mc-dVt" collectionClass="NSMutableArray" id="YMo-5R-Ox5"/>
+                        <outletCollection property="cards" destination="Urg-G6-NC5" collectionClass="NSMutableArray" id="abj-z5-SXn"/>
+                        <outletCollection property="cards" destination="Aam-2n-GhO" collectionClass="NSMutableArray" id="aAf-Xz-IZd"/>
+                        <outletCollection property="cards" destination="VdY-UT-djb" collectionClass="NSMutableArray" id="lTP-5l-s9T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
