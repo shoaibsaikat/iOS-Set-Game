@@ -10,23 +10,48 @@ import UIKit
 @IBDesignable
 class SetCardView: UIView {
     private var show = true
-    var text = "■"
-    var textColor = UIColor.orange
-    var fillColor = UIColor.systemGray5
+    var shape = "■"
+    var number = 3
+    var textColor = UIColor.red
+    var shading = SetCard.Shading.Blank
+    var text: String = ""
     
-    func setCard(withText text: String, withColor color: UIColor, withBackground bgColor: UIColor) {
-        self.text = text
+    func generateNumberedText(with shape: String, amount number: Int) -> String {
+        var text = ""
+        for _ in 0..<number {
+            text = text + shape
+        }
+        return text
+    }
+    
+    func setCard(withText shape: String, number: Int, withColor color: UIColor, withBackground shading: SetCard.Shading) {
+        self.shape = shape
+        self.number = number
         self.textColor = color
-        self.fillColor = bgColor
+        self.shading = shading
+        
+        text = generateNumberedText(with: shape, amount: number)
     }
     
     override func draw(_ rect: CGRect) {
         if show {
-            let card = UIBezierPath(roundedRect: bounds, cornerRadius: 7.0)
-            fillColor.setFill()
-            card.fill()
+//            TODO: remove after calling setCard done
+            text = generateNumberedText(with: shape, amount: number)
             
-            let font = UIFontMetrics(forTextStyle: .body).scaledFont(for: UIFont.preferredFont(forTextStyle: .body).withSize(26.0))
+            let card = UIBezierPath(roundedRect: bounds, cornerRadius: 7.0)
+            switch shading {
+            case SetCard.Shading.Fill:
+                UIColor.systemGray.setFill()
+                card.fill()
+            case SetCard.Shading.Blank:
+                UIColor.black.setStroke()
+                card.stroke()
+            default:
+                UIColor.systemGray6.setFill()
+                card.fill()
+            }
+
+            let font = UIFontMetrics(forTextStyle: .body).scaledFont(for: UIFont.preferredFont(forTextStyle: .body).withSize(20.0))
             let cardLabel = NSAttributedString(string: text, attributes: [.font: font, .foregroundColor: textColor])
             let labelRect = bounds.insetBy(dx: bounds.width / 2 - cardLabel.size().width / 2, dy: bounds.height / 2 - cardLabel.size().height / 2)
             cardLabel.draw(in: labelRect)
