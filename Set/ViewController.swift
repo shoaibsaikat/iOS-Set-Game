@@ -8,12 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var playingCards = [SetCard]()
+    var setCards = [SetCard]()
+    var randomCard: SetCard {
+        return setCards.remove(at: Int.random(in: 0..<setCards.count))
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         generateCards()
-        print("\(playingCards.count)")
+        initiateGame()
     }
     
     func generateCards() {
@@ -40,10 +44,17 @@ class ViewController: UIViewController {
                         case 2: cardShape = SetCard.Shape.Triangle.rawValue
                         default: cardShape = SetCard.Shape.Circle.rawValue
                         }
-                        playingCards.append(SetCard(shape: cardShape, number: number, color: cardColor, shade: cardShade))
+                        setCards.append(SetCard(shape: cardShape, number: number, color: cardColor, shade: cardShade))
                     }
                 }
             }
+        }
+    }
+    
+    func initiateGame() {
+        for index in 0..<12 {
+            let card = randomCard
+            cards[index].setCardView(withText: card.shape, number: card.number, withColor: card.color, withBackground: card.shade)
         }
     }
     
@@ -54,6 +65,9 @@ class ViewController: UIViewController {
                 card.addGestureRecognizer(tap)
             }
         }
+    }
+    
+    @IBAction func dealMoreCard(_ sender: UIButton) {
     }
 }
 

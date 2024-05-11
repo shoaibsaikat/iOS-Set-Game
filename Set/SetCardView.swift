@@ -9,12 +9,29 @@ import UIKit
 
 @IBDesignable
 class SetCardView: UIView {
-    private var show = true
+    var show = false
+    var selected = false {
+        didSet {
+            if selected {
+                self.transform = CGAffineTransform.identity.scaledBy(x: 0.80, y: 0.80)
+            }
+            setNeedsDisplay()
+        }
+    }
     var shape = "■"
     var number = 3
     var textColor = UIColor.red
     var shade = SetCard.Shade.Blank
     var text: String = ""
+    
+    func setCardView(withText shape: String, number: Int, withColor color: UIColor, withBackground shading: SetCard.Shade) {
+        self.shape = shape
+        self.number = number
+        self.textColor = color
+        self.shade = shading
+        self.show = true
+        text = generateNumberedText(with: shape, amount: number)
+    }
     
     func generateNumberedText(with shape: String, amount number: Int) -> String {
         var text = ""
@@ -23,31 +40,19 @@ class SetCardView: UIView {
         }
         return text
     }
-    
-    func setCard(withText shape: String, number: Int, withColor color: UIColor, withBackground shading: SetCard.Shade) {
-        self.shape = shape
-        self.number = number
-        self.textColor = color
-        self.shade = shading
-        
-        text = generateNumberedText(with: shape, amount: number)
-    }
-    
+
     override func draw(_ rect: CGRect) {
         if show {
-//            TODO: remove after calling setCard done
-            text = generateNumberedText(with: shape, amount: number)
-            
             let card = UIBezierPath(roundedRect: bounds, cornerRadius: 7.0)
             switch shade {
             case SetCard.Shade.Fill:
-                UIColor.systemGray.setFill()
+                UIColor.black.setFill()
                 card.fill()
             case SetCard.Shade.Blank:
                 UIColor.black.setStroke()
                 card.stroke()
             default:
-                UIColor.systemGray6.setFill()
+                UIColor.systemGray2.setFill()
                 card.fill()
             }
 
@@ -59,7 +64,7 @@ class SetCardView: UIView {
     }
 
     @objc func cardTapped(gesture: UITapGestureRecognizer) {
-        show = false
+        selected = !selected
         setNeedsDisplay()
     }
 }
