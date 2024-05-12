@@ -68,6 +68,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func dealMoreCard(_ sender: UIButton) {
+        for _ in 0..<3 {
+            let card = randomCard
+            for cardView in cards {
+                if !cardView.show {
+                    cardView.setCardView(withText: card.shape, number: card.number, withColor: card.color, withBackground: card.shade)
+                    cardView.show = true
+                    break
+                }
+            }
+        }
     }
 }
 

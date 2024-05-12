@@ -9,7 +9,11 @@ import UIKit
 
 @IBDesignable
 class SetCardView: UIView {
-    var show = false
+    var show = false {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     var selected = false {
         didSet {
             if selected {
@@ -65,6 +69,5 @@ class SetCardView: UIView {
 
     @objc func cardTapped(gesture: UITapGestureRecognizer) {
         selected = !selected
-        setNeedsDisplay()
     }
 }
