@@ -9,6 +9,7 @@ import UIKit
 
 @IBDesignable
 class SetCardView: UIView {
+    weak var parent: SetCardParent? = nil
     var show = false {
         didSet {
             setNeedsDisplay()
@@ -28,12 +29,13 @@ class SetCardView: UIView {
     var shade = SetCard.Shade.Blank
     var text: String = ""
     
-    func setCardView(withText shape: String, number: Int, withColor color: UIColor, withBackground shading: SetCard.Shade) {
+    func setCardView(withText shape: String, number: Int, withColor color: UIColor, withBackground shading: SetCard.Shade, parent: SetCardParent) {
         self.shape = shape
         self.number = number
         self.textColor = color
         self.shade = shading
         self.show = true
+        self.parent = parent
         text = generateNumberedText(with: shape, amount: number)
     }
     
@@ -67,10 +69,15 @@ class SetCardView: UIView {
         }
     }
 
-    @objc func cardTapped(gesture: UITapGestureRecognizer) {
+    @objc func cardTapped(_ gesture: UITapGestureRecognizer) {
         switch gesture.state {
         case .ended: selected = !selected
         default: break
         }
+        parent?.cardTapped(self)
     }
+}
+
+protocol SetCardParent: NSObject {
+    func cardTapped(_ card: SetCardView)
 }

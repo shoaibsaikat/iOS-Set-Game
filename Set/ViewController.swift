@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SetCardParent {
     var setCards = [SetCard]()
     var randomCard: SetCard {
         return setCards.remove(at: Int.random(in: 0..<setCards.count))
@@ -54,14 +54,14 @@ class ViewController: UIViewController {
     func initiateGame() {
         for index in 0..<12 {
             let card = randomCard
-            cards[index].setCardView(withText: card.shape, number: card.number, withColor: card.color, withBackground: card.shade)
+            cards[index].setCardView(withText: card.shape, number: card.number, withColor: card.color, withBackground: card.shade, parent: self)
         }
     }
     
     @IBOutlet var cards: [SetCardView]! {
         didSet {
             for card in cards {
-                let tap = UITapGestureRecognizer(target: card, action: #selector(card.cardTapped(gesture:)))
+                let tap = UITapGestureRecognizer(target: card, action: #selector(card.cardTapped(_:)))
                 card.addGestureRecognizer(tap)
             }
         }
@@ -72,12 +72,15 @@ class ViewController: UIViewController {
             let card = randomCard
             for cardView in cards {
                 if !cardView.show {
-                    cardView.setCardView(withText: card.shape, number: card.number, withColor: card.color, withBackground: card.shade)
-                    cardView.show = true
+                    cardView.setCardView(withText: card.shape, number: card.number, withColor: card.color, withBackground: card.shade, parent: self)
                     break
                 }
             }
         }
+    }
+    
+    func cardTapped(_ card: SetCardView) {
+        print("tapped")
     }
 }
 
