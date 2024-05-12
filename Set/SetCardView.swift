@@ -68,6 +68,9 @@ class SetCardView: UIView {
     }
 
     @objc func cardTapped(gesture: UITapGestureRecognizer) {
-        selected = !selected
+        switch gesture.state {
+        case .ended: selected = !selected
+        default: break
+        }
     }
 }
