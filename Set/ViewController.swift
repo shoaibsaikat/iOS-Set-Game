@@ -12,6 +12,7 @@ class ViewController: UIViewController, SetCardParent {
     var randomCard: SetCard {
         return setCards.remove(at: Int.random(in: 0..<setCards.count))
     }
+    var matchedCount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +59,7 @@ class ViewController: UIViewController, SetCardParent {
         }
     }
     
+    @IBOutlet weak var matchedSetLabel: UILabel!
     @IBOutlet var cards: [SetCardView]! {
         didSet {
             for card in cards {
@@ -79,8 +81,33 @@ class ViewController: UIViewController, SetCardParent {
         }
     }
     
+    var numberOfCardsTapped = 0
+    var firstCard, secondCard, thirdCard: SetCard?
     func cardTapped(_ card: SetCardView) {
-        print("tapped")
+        numberOfCardsTapped = numberOfCardsTapped + 1
+        switch numberOfCardsTapped {
+        case 1: firstCard = SetCard(shape: card.shape, number: card.number, color: card.textColor, shade: card.shade)
+        case 2: secondCard = SetCard(shape: card.shape, number: card.number, color: card.textColor, shade: card.shade)
+        default:
+            numberOfCardsTapped = 0
+            thirdCard = SetCard(shape: card.shape, number: card.number, color: card.textColor, shade: card.shade)
+            if SetCard.matchSet(first: firstCard!, second: secondCard!, third: thirdCard!) {
+                for card in cards {
+                    if card.selected {
+                        card.show = false
+                        card.selected = false
+                    }
+                }
+                matchedCount = matchedCount + 1
+                matchedSetLabel.text = "Set(\(matchedCount)"
+            } else {
+                for card in cards {
+                    if card.selected {
+                        card.selected = false
+                    }
+                }
+            }
+        }
     }
 }
 

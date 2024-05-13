@@ -137,37 +137,39 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="92" translatesAutoresizingMaskIntoConstraints="NO" id="30u-64-nNK">
-                                <rect key="frame" x="66" y="716" width="283" height="44"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSz-Cr-A5g">
-                                        <rect key="frame" x="0.0" y="0.0" width="114" height="44"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <state key="normal" title="Deal More">
-                                            <color key="titleColor" systemColor="systemBlueColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="dealMoreCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UCv-WJ-UZA"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set (0)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ws9-O8-2eH">
-                                        <rect key="frame" x="206" y="0.0" width="77" height="44"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <color key="textColor" systemColor="systemBlueColor"/>
-                                        <color key="highlightedColor" systemColor="labelColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set (0)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ws9-O8-2eH">
+                                <rect key="frame" x="168.5" y="768" width="77" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Gz1-bV-KFP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSz-Cr-A5g">
+                                <rect key="frame" x="150" y="716" width="114" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Deal More">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="dealMoreCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UCv-WJ-UZA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="30u-64-nNK" secondAttribute="trailing" constant="65" id="TYZ-ER-suw"/>
-                            <constraint firstItem="30u-64-nNK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="sRx-2w-YLE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="30u-64-nNK" secondAttribute="bottom" constant="102" id="vXz-5n-aBA"/>
+                            <constraint firstItem="Ws9-O8-2eH" firstAttribute="top" secondItem="ZSz-Cr-A5g" secondAttribute="bottom" constant="8" symbolic="YES" id="AQc-PH-fRf"/>
+                            <constraint firstItem="Ws9-O8-2eH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="Ai9-NJ-18U"/>
+                            <constraint firstItem="ZSz-Cr-A5g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="OWO-8N-7mA"/>
+                            <constraint firstItem="Ws9-O8-2eH" firstAttribute="centerX" secondItem="ZSz-Cr-A5g" secondAttribute="centerX" id="jPe-gl-dp0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZSz-Cr-A5g" secondAttribute="trailing" id="uU6-WO-OQw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ws9-O8-2eH" secondAttribute="bottom" constant="50" id="ypN-IL-xYJ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="matchedSetLabel" destination="Ws9-O8-2eH" id="6gQ-EQ-6XA"/>
                         <outletCollection property="cards" destination="Cge-Dh-8wR" collectionClass="NSMutableArray" id="9gT-E9-WpL"/>
                         <outletCollection property="cards" destination="wIs-26-FHu" collectionClass="NSMutableArray" id="vpk-mG-TlU"/>
                         <outletCollection property="cards" destination="E5Q-zI-iay" collectionClass="NSMutableArray" id="pRy-Nm-Vet"/>
@@ -196,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="332" y="93"/>
+            <point key="canvasLocation" x="331.8840579710145" y="92.410714285714278"/>
         </scene>
     </scenes>
     <resources>
