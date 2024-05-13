@@ -25,7 +25,7 @@ class SetCardView: UIView {
             setNeedsDisplay()
         }
     }
-    var shape = "■"
+    var shape = "?"
     var number = 3
     var textColor = UIColor.red
     var shade = SetCard.Shade.Blank
@@ -73,10 +73,13 @@ class SetCardView: UIView {
 
     @objc func cardTapped(_ gesture: UITapGestureRecognizer) {
         switch gesture.state {
-        case .ended: selected = !selected
+        case .ended:
+            if !selected {
+                selected = true
+                parent?.cardTapped(self)
+            }
         default: break
         }
-        parent?.cardTapped(self)
     }
 }
 
