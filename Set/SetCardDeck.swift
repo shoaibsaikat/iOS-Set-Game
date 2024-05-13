@@ -12,15 +12,15 @@ struct SetCardDeck {
     var setCards = [SetCard]()
 
     mutating func randomCard() -> SetCard {
-        return setCards.remove(at: Int.random(in: 0..<setCards.count))
+        return setCards.remove(at: Int.random(in: 0 ..< setCards.count))
     }
 
     mutating func generateCards() {
 //        TODO: find a better way to enumerate shade and shape
-        for number in 1...SetCard.TypeCount {
-            for color in 1...SetCard.TypeCount {
-                for shade in 1...SetCard.TypeCount {
-                    for shape in 1...SetCard.TypeCount {
+        for number in 1 ... SetCard.TypeCount {
+            for color in 1 ... SetCard.TypeCount {
+                for shade in 1 ... SetCard.TypeCount {
+                    for shape in 1 ... SetCard.TypeCount {
                         var cardColor: UIColor
                         switch color {
                         case 1: cardColor = UIColor.red

@@ -19,9 +19,9 @@ class ViewController: UIViewController, SetCardParent {
     }
     
     func initiateView() {
-        for index in 0..<12 {
+        for index in 0 ..< 12 {
             let card = cardDeck.randomCard()
-            cards[index].setCardView(withText: card.shape, number: card.number, withColor: card.color, withBackground: card.shade, parent: self)
+            cards[index].setCardView(parent: self, withShape: card.shape, withNumber: card.number, withColor: card.color, withBackground: card.shade)
         }
     }
     
@@ -36,11 +36,11 @@ class ViewController: UIViewController, SetCardParent {
     }
     
     @IBAction func dealMoreCard(_ sender: UIButton) {
-        for _ in 0..<3 {
+        for _ in 0 ..< 3 {
             let card = cardDeck.randomCard()
             for cardView in cards {
                 if !cardView.show {
-                    cardView.setCardView(withText: card.shape, number: card.number, withColor: card.color, withBackground: card.shade, parent: self)
+                    cardView.setCardView(parent: self, withShape: card.shape, withNumber: card.number, withColor: card.color, withBackground: card.shade)
                     break
                 }
             }

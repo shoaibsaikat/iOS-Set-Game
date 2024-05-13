@@ -9,7 +9,7 @@ import UIKit
 
 @IBDesignable
 class SetCardView: UIView {
-    weak var parent: SetCardParent? = nil
+    weak var parent: SetCardParent?
     var show = false {
         didSet {
             setNeedsDisplay()
@@ -17,11 +17,7 @@ class SetCardView: UIView {
     }
     var selected = false {
         didSet {
-            if selected {
-                self.transform = CGAffineTransform.identity.scaledBy(x: 0.8, y: 0.8)
-            } else {
-                self.transform = CGAffineTransform.identity.scaledBy(x: 1, y: 1)
-            }
+            self.transform = selected ? CGAffineTransform.identity.scaledBy(x: 0.8, y: 0.8) : CGAffineTransform.identity.scaledBy(x: 1.0, y: 1.0)
             setNeedsDisplay()
         }
     }
@@ -31,7 +27,7 @@ class SetCardView: UIView {
     var shade = SetCard.Shade.Blank
     var text: String = ""
     
-    func setCardView(withText shape: String, number: Int, withColor color: UIColor, withBackground shading: SetCard.Shade, parent: SetCardParent) {
+    func setCardView(parent: SetCardParent, withShape shape: String, withNumber number: Int, withColor color: UIColor, withBackground shading: SetCard.Shade) {
         self.shape = shape
         self.number = number
         self.textColor = color
@@ -43,7 +39,7 @@ class SetCardView: UIView {
     
     func generateNumberedText(with shape: String, amount number: Int) -> String {
         var text = ""
-        for _ in 0..<number {
+        for _ in 0 ..< number {
             text = text + shape
         }
         return text
