@@ -99,7 +99,7 @@ class ViewController: UIViewController, SetCardParent {
                     }
                 }
                 matchedCount = matchedCount + 1
-                matchedSetLabel.text = "Set(\(matchedCount)"
+                matchedSetLabel.text = "Set(\(matchedCount))"
             } else {
                 for card in cards {
                     if card.selected {
