@@ -17,7 +17,7 @@ class SetCardView: UIView {
     }
     var selected = false {
         didSet {
-            self.transform = selected ? CGAffineTransform.identity.scaledBy(x: 0.8, y: 0.8) : CGAffineTransform.identity.scaledBy(x: 1.0, y: 1.0)
+            self.transform = selected ? CGAffineTransform.identity.scaledBy(x: 0.8, y: 0.8) : CGAffineTransform.identity
             setNeedsDisplay()
         }
     }
