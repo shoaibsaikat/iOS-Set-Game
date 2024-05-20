@@ -59,6 +59,7 @@ class ViewController: UIViewController, SetCardParent {
             numberOfCardsTapped = 0
             thirdCard = SetCard(shape: card.shape, number: card.number, color: card.textColor, shade: card.shade)
             if cardDeck.matchSet(first: firstCard!, second: secondCard!, third: thirdCard!) {
+//                matched
                 for card in cards {
                     if card.selected {
                         card.show = false
@@ -68,6 +69,7 @@ class ViewController: UIViewController, SetCardParent {
                 matchedCount = matchedCount + 1
                 matchedSetLabel.text = "Set(\(matchedCount))"
             } else {
+//                did not match
                 for card in cards {
                     if card.selected {
                         card.selected = false

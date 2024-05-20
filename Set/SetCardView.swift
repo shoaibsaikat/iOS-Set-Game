@@ -12,12 +12,24 @@ class SetCardView: UIView {
     weak var parent: SetCardParent?
     var show = false {
         didSet {
-            setNeedsDisplay()
+//            do not work need to fix show hide animation
+            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.6, delay: 0, options: [], animations: {
+                if !self.show {
+                    self.alpha = 0
+                }
+            }, completion: { _ in
+                self.transform = CGAffineTransform.identity
+                self.alpha = 1
+                self.setNeedsDisplay()
+            })
         }
     }
     var selected = false {
         didSet {
-            self.transform = selected ? CGAffineTransform.identity.scaledBy(x: 0.8, y: 0.8) : CGAffineTransform.identity
+//            TODO: if three are selected need to show animation to the third card if not matched
+            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.6, delay: 0, options: [], animations: {
+                self.transform = self.selected ? CGAffineTransform.identity.scaledBy(x: 0.8, y: 0.8) : CGAffineTransform.identity
+            })
             setNeedsDisplay()
         }
     }
