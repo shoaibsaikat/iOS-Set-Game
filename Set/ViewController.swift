@@ -8,8 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController, SetCardParent {
-    var cardDeck = SetCardDeck()
-    var matchedCount = 0
+    var cardDeck            = SetCardDeck()
+    var matchedCount        = 0
+    var animationRunning    = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,13 +37,19 @@ class ViewController: UIViewController, SetCardParent {
     }
     
     @IBAction func dealMoreCard(_ sender: UIButton) {
+        var emptyFound = false
         for _ in 0 ..< 3 {
             let card = cardDeck.randomCard()
             for cardView in cards {
                 if !cardView.show {
+                    emptyFound = true
                     cardView.setCardView(parent: self, withShape: card.shape, withNumber: card.number, withColor: card.color, withBackground: card.shade)
                     break
                 }
+            }
+            if !emptyFound {
+                cardDeck.putCardBack(card)
+                break
             }
         }
     }
@@ -56,27 +63,42 @@ class ViewController: UIViewController, SetCardParent {
         case 1: firstCard = SetCard(shape: card.shape, number: card.number, color: card.textColor, shade: card.shade)
         case 2: secondCard = SetCard(shape: card.shape, number: card.number, color: card.textColor, shade: card.shade)
         default:
-            numberOfCardsTapped = 0
-            thirdCard = SetCard(shape: card.shape, number: card.number, color: card.textColor, shade: card.shade)
-            if cardDeck.matchSet(first: firstCard!, second: secondCard!, third: thirdCard!) {
-//                matched
-                for card in cards {
-                    if card.selected {
-                        card.show = false
-                        card.selected = false
+            DispatchQueue.main.asyncAfter(deadline: .now() + SetCardView.TransitionTime) {
+                // Needed so that third card gets time to finish its animation
+                self.numberOfCardsTapped = 0
+                self.thirdCard = SetCard(shape: card.shape, number: card.number, color: card.textColor, shade: card.shade)
+                if self.cardDeck.matchSet(first: self.firstCard!, second: self.secondCard!, third: self.thirdCard!) {
+                    // matched
+                    for card in self.cards {
+                        if card.selected {
+                            card.show       = false
+                            card.selected   = false
+                        }
                     }
-                }
-                matchedCount = matchedCount + 1
-                matchedSetLabel.text = "Set(\(matchedCount))"
-            } else {
-//                did not match
-                for card in cards {
-                    if card.selected {
-                        card.selected = false
+                    self.matchedCount = self.matchedCount + 1
+                    self.matchedSetLabel.text = "Set(\(self.matchedCount))"
+                } else {
+                    // did not match
+                    for card in self.cards {
+                        if card.selected {
+                            card.selected = false
+                        }
                     }
                 }
             }
         }
+    }
+    
+    func animationStarted() {
+        animationRunning = true
+    }
+    
+    func animationFinished() {
+        animationRunning = false
+    }
+    
+    func getAnimationStatus() -> Bool {
+        return animationRunning
     }
 }
 

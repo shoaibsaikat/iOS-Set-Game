@@ -16,34 +16,38 @@ struct SetCardDeck {
     }
 
     mutating func generateCards() {
-//        TODO: find a better way to enumerate shade and shape
+        // TODO: find a better way to enumerate shade and shape
         for number in 1 ... SetCard.TypeCount {
             for color in 1 ... SetCard.TypeCount {
                 for shade in 1 ... SetCard.TypeCount {
                     for shape in 1 ... SetCard.TypeCount {
                         var cardColor: UIColor
                         switch color {
-                        case 1: cardColor = UIColor.red
-                        case 2: cardColor = UIColor.green
-                        default: cardColor = UIColor.blue
+                        case 1:     cardColor = UIColor.red
+                        case 2:     cardColor = UIColor.green
+                        default:    cardColor = UIColor.blue
                         }
                         var cardShade: SetCard.Shade
                         switch shade {
-                        case 1: cardShade = SetCard.Shade.Fill
-                        case 2: cardShade = SetCard.Shade.Stripped
-                        default: cardShade = SetCard.Shade.Blank
+                        case 1:     cardShade = SetCard.Shade.Fill
+                        case 2:     cardShade = SetCard.Shade.Stripped
+                        default:    cardShade = SetCard.Shade.Blank
                         }
                         var cardShape: String
                         switch shape {
-                        case 1: cardShape = SetCard.Shape.Square.rawValue
-                        case 2: cardShape = SetCard.Shape.Triangle.rawValue
-                        default: cardShape = SetCard.Shape.Circle.rawValue
+                        case 1:     cardShape = SetCard.Shape.Square.rawValue
+                        case 2:     cardShape = SetCard.Shape.Triangle.rawValue
+                        default:    cardShape = SetCard.Shape.Circle.rawValue
                         }
                         setCards.append(SetCard(shape: cardShape, number: number, color: cardColor, shade: cardShade))
                     }
                 }
             }
         }
+    }
+    
+    mutating func putCardBack(_ card: SetCard) {
+        setCards.append(card)
     }
     
     mutating func matchSet(first: SetCard, second: SetCard, third: SetCard) -> Bool {

@@ -9,44 +9,53 @@ import UIKit
 
 @IBDesignable
 class SetCardView: UIView {
+    static let TransitionTime = 0.3
+    static let Scale: CGFloat = 0.8
     weak var parent: SetCardParent?
     var show = false {
         didSet {
-//            do not work need to fix show hide animation
-            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.6, delay: 0, options: [], animations: {
-                if !self.show {
-                    self.alpha = 0
-                }
+            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: SetCardView.TransitionTime, delay: 0, options: [], animations: {
+                self.parent?.animationStarted()
+                self.alpha = self.show ? 1 : 0
             }, completion: { _ in
-                self.transform = CGAffineTransform.identity
-                self.alpha = 1
-                self.setNeedsDisplay()
+                self.transform  = CGAffineTransform.identity
+                self.parent?.animationFinished()
+                if !self.show {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + SetCardView.TransitionTime) {
+                        // Needed so that hide gets time to finish its animation
+                        self.setNeedsDisplay()
+                    }
+                } else {
+                    // TODO: any animation to show?
+                    self.setNeedsDisplay()
+                }
             })
         }
     }
     var selected = false {
         didSet {
-//            TODO: if three are selected need to show animation to the third card if not matched
-            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.6, delay: 0, options: [], animations: {
-                self.transform = self.selected ? CGAffineTransform.identity.scaledBy(x: 0.8, y: 0.8) : CGAffineTransform.identity
+            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: SetCardView.TransitionTime, delay: 0, options: [], animations: {
+                self.parent?.animationStarted()
+                self.transform = self.selected ? CGAffineTransform.identity.scaledBy(x: SetCardView.Scale, y: SetCardView.Scale) : CGAffineTransform.identity
+            }, completion: { _ in
+                self.parent?.animationFinished()
             })
-            setNeedsDisplay()
         }
     }
-    var shape = "?"
-    var number = 3
-    var textColor = UIColor.red
-    var shade = SetCard.Shade.Blank
-    var text: String = ""
+    var shape           = "?"
+    var number          = 3
+    var textColor       = UIColor.red
+    var shade           = SetCard.Shade.Blank
+    var text            = ""
     
     func setCardView(parent: SetCardParent, withShape shape: String, withNumber number: Int, withColor color: UIColor, withBackground shading: SetCard.Shade) {
-        self.shape = shape
-        self.number = number
-        self.textColor = color
-        self.shade = shading
-        self.show = true
-        self.parent = parent
-        text = generateNumberedText(with: shape, amount: number)
+        self.shape      = shape
+        self.number     = number
+        self.textColor  = color
+        self.shade      = shading
+        self.show       = true
+        self.parent     = parent
+        self.text       = generateNumberedText(with: shape, amount: number)
     }
     
     func generateNumberedText(with shape: String, amount number: Int) -> String {
@@ -71,7 +80,6 @@ class SetCardView: UIView {
                 UIColor.systemGray2.setFill()
                 card.fill()
             }
-
             let font = UIFontMetrics(forTextStyle: .body).scaledFont(for: UIFont.preferredFont(forTextStyle: .body).withSize(20.0))
             let cardLabel = NSAttributedString(string: text, attributes: [.font: font, .foregroundColor: textColor])
             let labelRect = bounds.insetBy(dx: bounds.width / 2 - cardLabel.size().width / 2, dy: bounds.height / 2 - cardLabel.size().height / 2)
@@ -80,17 +88,23 @@ class SetCardView: UIView {
     }
 
     @objc func cardTapped(_ gesture: UITapGestureRecognizer) {
-        switch gesture.state {
-        case .ended:
-            if !selected {
-                selected = true
-                parent?.cardTapped(self)
+        // tap won't work until the animation of one card is finished
+        if let animationRunning = parent?.getAnimationStatus(), !animationRunning {
+            switch gesture.state {
+            case .ended:
+                if !selected {
+                    selected = true
+                    parent?.cardTapped(self)
+                }
+            default: break
             }
-        default: break
         }
     }
 }
 
 protocol SetCardParent: NSObject {
     func cardTapped(_ card: SetCardView)
+    func animationStarted()
+    func animationFinished()
+    func getAnimationStatus() -> Bool
 }
