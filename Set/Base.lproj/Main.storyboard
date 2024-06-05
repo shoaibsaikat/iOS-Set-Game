@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,131 +17,131 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="0rg-vp-8aX">
-                                <rect key="frame" x="10" y="10" width="355" height="580"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0rg-vp-8aX">
+                                <rect key="frame" x="10" y="10" width="355" height="460"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="pWS-FG-8tm">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="70"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cge-Dh-8wR" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Cge-Dh-8wR" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wIs-26-FHu" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="wIs-26-FHu" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="93" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5Q-zI-iay" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="E5Q-zI-iay" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="186" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g79-Uj-tNd" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="g79-Uj-tNd" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="279" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="OsP-4g-eM1">
-                                        <rect key="frame" x="0.0" y="102" width="355" height="70"/>
+                                        <rect key="frame" x="0.0" y="78" width="355" height="70"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n54-Ic-qNq" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="n54-Ic-qNq" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0u-bL-9yi" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="G0u-bL-9yi" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="93" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wK-dD-Jbf" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7wK-dD-Jbf" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="186" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SdK-Je-Zmm" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="SdK-Je-Zmm" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="279" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="qve-Vc-URL">
-                                        <rect key="frame" x="0.0" y="204" width="355" height="70"/>
+                                        <rect key="frame" x="0.0" y="156" width="355" height="70"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1tx-3b-u5Z" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="1tx-3b-u5Z" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ok0-pP-xZL" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ok0-pP-xZL" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="93" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TuW-bd-IDr" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="TuW-bd-IDr" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="186" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSu-jc-1d6" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="oSu-jc-1d6" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="279" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="xYC-I1-hbO">
-                                        <rect key="frame" x="0.0" y="306" width="355" height="70"/>
+                                        <rect key="frame" x="0.0" y="234" width="355" height="70"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VH9-Tt-Psv" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VH9-Tt-Psv" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFe-Qk-GGq" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="cFe-Qk-GGq" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="93" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMC-rF-eKd" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="CMC-rF-eKd" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="186" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1B-Sm-KBf" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="s1B-Sm-KBf" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="279" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Ia-xi-XBQ">
-                                        <rect key="frame" x="0.0" y="408" width="355" height="70"/>
+                                        <rect key="frame" x="0.0" y="312" width="355" height="70"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJj-rs-eLF" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="fJj-rs-eLF" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WqQ-yh-dyg" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="WqQ-yh-dyg" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="93" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wod-Ph-BJm" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="wod-Ph-BJm" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="186" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rqk-WY-ApK" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Rqk-WY-ApK" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="279" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="05q-k4-cRX">
-                                        <rect key="frame" x="0.0" y="510" width="355" height="70"/>
+                                        <rect key="frame" x="0.0" y="390" width="355" height="70"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNt-mc-dVt" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lNt-mc-dVt" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Urg-G6-NC5" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Urg-G6-NC5" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="93" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aam-2n-GhO" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Aam-2n-GhO" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="186" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VdY-UT-djb" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VdY-UT-djb" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="279" y="0.0" width="76" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
@@ -149,10 +150,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="XjM-Qf-czM">
-                                <rect key="frame" x="80" y="610" width="215" height="47"/>
+                                <rect key="frame" x="80" y="490" width="215" height="167"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSz-Cr-A5g">
-                                        <rect key="frame" x="0.0" y="5.5" width="90" height="36"/>
+                                        <rect key="frame" x="0.0" y="65.5" width="90" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Deal More">
                                             <color key="titleColor" systemColor="systemBlueColor"/>
@@ -162,7 +163,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set (0)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ws9-O8-2eH">
-                                        <rect key="frame" x="125" y="11.5" width="90" height="24"/>
+                                        <rect key="frame" x="125" y="71.5" width="90" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" systemColor="systemBlueColor"/>
                                         <color key="highlightedColor" systemColor="labelColor"/>
