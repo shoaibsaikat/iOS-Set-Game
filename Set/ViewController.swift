@@ -67,7 +67,7 @@ class ViewController: UIViewController, SetCardParent {
         case 1: firstCard = SetCard(shape: card.shape, number: card.number, color: card.textColor, shade: card.shade)
         case 2: secondCard = SetCard(shape: card.shape, number: card.number, color: card.textColor, shade: card.shade)
         default:
-            DispatchQueue.main.asyncAfter(deadline: .now() + SetCardView.transitionTime) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + SetCardView.transitionWaitTime) {
                 // Needed so that third card gets time to finish its animation
                 self.numberOfCardsTapped = 0
                 self.thirdCard = SetCard(shape: card.shape, number: card.number, color: card.textColor, shade: card.shade)
@@ -81,7 +81,7 @@ class ViewController: UIViewController, SetCardParent {
                     }
                     self.matchedCount = self.matchedCount + 1
                     self.matchedSetLabel.text = "Set(\(self.matchedCount))"
-                    DispatchQueue.main.asyncAfter(deadline: .now() + SetCardView.transitionTime) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + SetCardView.transitionWaitTime) {
                         // Needed so that hide gets time to finish animation
                         self.addThreeMoreCards()
                     }

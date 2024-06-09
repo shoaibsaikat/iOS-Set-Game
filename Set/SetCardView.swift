@@ -10,6 +10,7 @@ import UIKit
 @IBDesignable
 class SetCardView: UIView {
     static let transitionTime       = 0.3
+    static let transitionWaitTime   = SetCardView.transitionTime * 1.5
     static let scale: CGFloat       = 0.8
     static let fontSize: CGFloat    = 18.0
     static let cardRaidus: CGFloat  = 7.0
@@ -23,7 +24,7 @@ class SetCardView: UIView {
                 self.transform  = CGAffineTransform.identity
                 self.parent?.animationFinished()
                 if !self.show {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + SetCardView.transitionTime) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + SetCardView.transitionWaitTime) {
                         // Needed so that hide gets time to finish its animation
                         self.setNeedsDisplay()
                     }
