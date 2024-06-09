@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 struct SetCardDeck {
-    var setCards = [SetCard]()
+    private var setCards = [SetCard]()
 
     mutating func randomCard() -> SetCard {
         return setCards.remove(at: Int.random(in: 0 ..< setCards.count))

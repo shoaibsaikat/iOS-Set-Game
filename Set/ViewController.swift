@@ -37,6 +37,10 @@ class ViewController: UIViewController, SetCardParent {
     }
     
     @IBAction func dealMoreCard(_ sender: UIButton) {
+        addThreeMoreCards()
+    }
+    
+    private func addThreeMoreCards() {
         var emptyFound = false
         for _ in 0 ..< 3 {
             let card = cardDeck.randomCard()
@@ -77,6 +81,10 @@ class ViewController: UIViewController, SetCardParent {
                     }
                     self.matchedCount = self.matchedCount + 1
                     self.matchedSetLabel.text = "Set(\(self.matchedCount))"
+                    DispatchQueue.main.asyncAfter(deadline: .now() + SetCardView.transitionTime) {
+                        // Needed so that hide gets time to finish animation
+                        self.addThreeMoreCards()
+                    }
                 } else {
                     // did not match
                     for card in self.cards {
