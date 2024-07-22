@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,146 +14,268 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Set" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0rg-vp-8aX">
-                                <rect key="frame" x="10" y="10" width="355" height="460"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="bCk-Hr-c4S">
+                                <rect key="frame" x="32" y="47" width="364" height="715"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="pWS-FG-8tm">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="70"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iKi-S6-jGt">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="100"/>
                                         <subviews>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Cge-Dh-8wR" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="D78-Dt-xKl"/>
+                                                    <constraint firstAttribute="height" constant="100" id="FOe-NJ-FvH"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="wIs-26-FHu" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="93" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="xwR-NL-EQF" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="96" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="9Gl-1m-Bbd"/>
+                                                    <constraint firstAttribute="height" constant="100" id="Wh8-Qd-1F2"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="E5Q-zI-iay" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="186" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3u7-Ui-2wZ" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="192" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="XQM-ut-u8I"/>
+                                                    <constraint firstAttribute="width" constant="76" id="bdX-BW-xSR"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="g79-Uj-tNd" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="279" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="vqG-DH-6RX" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="288" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="OsP-4g-eM1">
-                                        <rect key="frame" x="0.0" y="78" width="355" height="70"/>
-                                        <subviews>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="n54-Ic-qNq" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
-                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="G0u-bL-9yi" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="93" y="0.0" width="76" height="70"/>
-                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7wK-dD-Jbf" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="186" y="0.0" width="76" height="70"/>
-                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="SdK-Je-Zmm" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="279" y="0.0" width="76" height="70"/>
-                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="6Fx-QP-tOL"/>
+                                                    <constraint firstAttribute="height" constant="100" id="J1s-4U-gsn"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="qve-Vc-URL">
-                                        <rect key="frame" x="0.0" y="156" width="355" height="70"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="v0F-GG-aIQ">
+                                        <rect key="frame" x="0.0" y="123" width="364" height="100"/>
                                         <subviews>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="1tx-3b-u5Z" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="efI-Bh-UNM" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="870-9q-RFt"/>
+                                                    <constraint firstAttribute="width" constant="76" id="JZI-q8-WIe"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ok0-pP-xZL" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="93" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="PsC-OE-Yn7" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="96" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="MJ6-CZ-CaU"/>
+                                                    <constraint firstAttribute="width" constant="76" id="xwm-sw-ZX1"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="TuW-bd-IDr" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="186" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="rxa-FC-mzD" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="192" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="IEW-YD-qvo"/>
+                                                    <constraint firstAttribute="width" constant="76" id="eas-Oy-3qP"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="oSu-jc-1d6" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="279" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="qm5-DG-BFG" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="288" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="xvC-6B-nyb"/>
+                                                    <constraint firstAttribute="width" constant="76" id="yI3-Gy-Oyt"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="xYC-I1-hbO">
-                                        <rect key="frame" x="0.0" y="234" width="355" height="70"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8f4-LV-odw">
+                                        <rect key="frame" x="0.0" y="246" width="364" height="100"/>
                                         <subviews>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VH9-Tt-Psv" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Nud-Gp-rcD" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="anu-NY-oGv"/>
+                                                    <constraint firstAttribute="width" constant="76" id="vTy-xZ-3zK"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="cFe-Qk-GGq" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="93" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ge1-5L-4gA" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="96" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="CY8-ZG-tq7"/>
+                                                    <constraint firstAttribute="height" constant="100" id="VnO-hL-V3A"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="CMC-rF-eKd" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="186" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BI1-S8-P5L" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="192" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="U3g-IR-dly"/>
+                                                    <constraint firstAttribute="width" constant="76" id="o2H-Kn-59H"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="s1B-Sm-KBf" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="279" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ytg-F2-Mai" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="288" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="71R-Kn-i1h"/>
+                                                    <constraint firstAttribute="height" constant="100" id="uEx-0q-A3s"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Ia-xi-XBQ">
-                                        <rect key="frame" x="0.0" y="312" width="355" height="70"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bCr-dd-qWi">
+                                        <rect key="frame" x="0.0" y="369" width="364" height="100"/>
                                         <subviews>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="fJj-rs-eLF" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="SMf-7k-vMb" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="30L-Ko-yqf"/>
+                                                    <constraint firstAttribute="height" constant="100" id="56U-ZW-nf8"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="WqQ-yh-dyg" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="93" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="NFd-cu-wYw" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="96" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="DAS-Bg-Uqg"/>
+                                                    <constraint firstAttribute="height" constant="100" id="JxX-qI-9hR"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="wod-Ph-BJm" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="186" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="IfH-Vr-ozF" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="192" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="ON2-JS-seG"/>
+                                                    <constraint firstAttribute="height" constant="100" id="cin-Mb-TGE"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Rqk-WY-ApK" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="279" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="rSD-Dr-cTK" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="288" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="TkP-0q-Rex"/>
+                                                    <constraint firstAttribute="width" constant="76" id="hYT-bc-vRO"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="05q-k4-cRX">
-                                        <rect key="frame" x="0.0" y="390" width="355" height="70"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Qgk-N6-7UF">
+                                        <rect key="frame" x="0.0" y="492" width="364" height="100"/>
                                         <subviews>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lNt-mc-dVt" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="5Xd-Xe-ySl" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="HTq-Lf-des"/>
+                                                    <constraint firstAttribute="height" constant="100" id="NgY-1q-ZAo"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Urg-G6-NC5" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="93" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="O80-RJ-6eC" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="96" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="bRq-oB-Bsp"/>
+                                                    <constraint firstAttribute="width" constant="76" id="qP8-bg-uat"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Aam-2n-GhO" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="186" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="DTW-8K-rCB" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="192" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="1MC-2U-IVv"/>
+                                                    <constraint firstAttribute="height" constant="100" id="ULE-b9-toH"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VdY-UT-djb" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="279" y="0.0" width="76" height="70"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="eFa-SS-eEG" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="288" y="0.0" width="76" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="bu3-pW-bda"/>
+                                                    <constraint firstAttribute="height" constant="100" id="s7b-A3-7d0"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kWq-w0-RK2">
+                                        <rect key="frame" x="0.0" y="615" width="364" height="100"/>
+                                        <subviews>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="4DJ-lm-8ty" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="Dbv-cr-RpC"/>
+                                                    <constraint firstAttribute="height" constant="100" id="hm3-uZ-xVG"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="4O2-9U-5L1" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="96" y="0.0" width="76" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="1vI-mg-WPc"/>
+                                                    <constraint firstAttribute="height" constant="100" id="H7R-kg-pzc"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BL1-NP-4sn" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="192" y="0.0" width="76" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="3zA-rx-cOj"/>
+                                                    <constraint firstAttribute="width" constant="76" id="il3-wT-ANX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Q0G-TH-AQm" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="288" y="0.0" width="76" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="5fv-3O-5xi"/>
+                                                    <constraint firstAttribute="height" constant="100" id="kOC-sY-Iax"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="715" id="yTG-RC-aLg"/>
+                                </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="XjM-Qf-czM">
-                                <rect key="frame" x="80" y="490" width="215" height="167"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="gpS-IC-wj7">
+                                <rect key="frame" x="20" y="872" width="388" height="20"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSz-Cr-A5g">
-                                        <rect key="frame" x="0.0" y="65.5" width="90" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Deal More">
                                             <color key="titleColor" systemColor="systemBlueColor"/>
@@ -163,61 +285,63 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set (0)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ws9-O8-2eH">
-                                        <rect key="frame" x="125" y="71.5" width="90" height="24"/>
+                                        <rect key="frame" x="211.66666666666663" y="0.0" width="176.33333333333337" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" systemColor="systemBlueColor"/>
                                         <color key="highlightedColor" systemColor="labelColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="bOw-go-U1r"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="XjM-Qf-czM" firstAttribute="top" secondItem="0rg-vp-8aX" secondAttribute="bottom" constant="20" id="9ML-vZ-OZk"/>
-                            <constraint firstItem="0rg-vp-8aX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Mp6-f6-Ska"/>
-                            <constraint firstItem="XjM-Qf-czM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NvN-6R-fg7"/>
-                            <constraint firstItem="0rg-vp-8aX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OM5-nV-j1u"/>
-                            <constraint firstItem="0rg-vp-8aX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hdH-K5-5q4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XjM-Qf-czM" secondAttribute="bottom" constant="10" id="mwB-ao-UXB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gpS-IC-wj7" secondAttribute="bottom" id="0U2-OG-lRT"/>
+                            <constraint firstItem="gpS-IC-wj7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xu9-ug-mR0"/>
+                            <constraint firstItem="bCk-Hr-c4S" firstAttribute="centerX" secondItem="gpS-IC-wj7" secondAttribute="centerX" id="fqt-8X-RE0"/>
+                            <constraint firstItem="bCk-Hr-c4S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mL9-QT-yiS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gpS-IC-wj7" secondAttribute="trailing" constant="20" id="sWj-NW-akQ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="matchedSetLabel" destination="Ws9-O8-2eH" id="6gQ-EQ-6XA"/>
-                        <outletCollection property="cards" destination="wIs-26-FHu" collectionClass="NSMutableArray" id="vpk-mG-TlU"/>
-                        <outletCollection property="cards" destination="g79-Uj-tNd" collectionClass="NSMutableArray" id="P0V-H3-i9Q"/>
-                        <outletCollection property="cards" destination="E5Q-zI-iay" collectionClass="NSMutableArray" id="pRy-Nm-Vet"/>
-                        <outletCollection property="cards" destination="Cge-Dh-8wR" collectionClass="NSMutableArray" id="9gT-E9-WpL"/>
-                        <outletCollection property="cards" destination="7wK-dD-Jbf" collectionClass="NSMutableArray" id="L9C-oA-bs6"/>
-                        <outletCollection property="cards" destination="n54-Ic-qNq" collectionClass="NSMutableArray" id="Ba3-mg-x5k"/>
-                        <outletCollection property="cards" destination="SdK-Je-Zmm" collectionClass="NSMutableArray" id="sNR-Tt-Uak"/>
-                        <outletCollection property="cards" destination="G0u-bL-9yi" collectionClass="NSMutableArray" id="1AT-YY-tNS"/>
-                        <outletCollection property="cards" destination="1tx-3b-u5Z" collectionClass="NSMutableArray" id="Xht-FL-7kg"/>
-                        <outletCollection property="cards" destination="Ok0-pP-xZL" collectionClass="NSMutableArray" id="y80-R5-9Td"/>
-                        <outletCollection property="cards" destination="TuW-bd-IDr" collectionClass="NSMutableArray" id="L15-Lb-SQl"/>
-                        <outletCollection property="cards" destination="oSu-jc-1d6" collectionClass="NSMutableArray" id="jfy-9G-02x"/>
-                        <outletCollection property="cards" destination="CMC-rF-eKd" collectionClass="NSMutableArray" id="VDa-4p-imt"/>
-                        <outletCollection property="cards" destination="cFe-Qk-GGq" collectionClass="NSMutableArray" id="dgD-gh-jJF"/>
-                        <outletCollection property="cards" destination="VH9-Tt-Psv" collectionClass="NSMutableArray" id="gSP-xl-EOu"/>
-                        <outletCollection property="cards" destination="s1B-Sm-KBf" collectionClass="NSMutableArray" id="gYc-R2-Vfc"/>
-                        <outletCollection property="cards" destination="WqQ-yh-dyg" collectionClass="NSMutableArray" id="h0d-Uu-aAl"/>
-                        <outletCollection property="cards" destination="fJj-rs-eLF" collectionClass="NSMutableArray" id="wWI-yJ-rJK"/>
-                        <outletCollection property="cards" destination="wod-Ph-BJm" collectionClass="NSMutableArray" id="kbX-f4-Mia"/>
-                        <outletCollection property="cards" destination="Rqk-WY-ApK" collectionClass="NSMutableArray" id="FCZ-nL-8bO"/>
-                        <outletCollection property="cards" destination="Urg-G6-NC5" collectionClass="NSMutableArray" id="abj-z5-SXn"/>
-                        <outletCollection property="cards" destination="lNt-mc-dVt" collectionClass="NSMutableArray" id="YMo-5R-Ox5"/>
-                        <outletCollection property="cards" destination="VdY-UT-djb" collectionClass="NSMutableArray" id="lTP-5l-s9T"/>
-                        <outletCollection property="cards" destination="Aam-2n-GhO" collectionClass="NSMutableArray" id="aAf-Xz-IZd"/>
+                        <outletCollection property="cards" destination="Cge-Dh-8wR" collectionClass="NSMutableArray" id="XQH-Jt-hVB"/>
+                        <outletCollection property="cards" destination="efI-Bh-UNM" collectionClass="NSMutableArray" id="PbO-m4-Qbm"/>
+                        <outletCollection property="cards" destination="PsC-OE-Yn7" collectionClass="NSMutableArray" id="vuB-DW-oWD"/>
+                        <outletCollection property="cards" destination="rxa-FC-mzD" collectionClass="NSMutableArray" id="qZL-mx-dDa"/>
+                        <outletCollection property="cards" destination="qm5-DG-BFG" collectionClass="NSMutableArray" id="Ear-u9-upU"/>
+                        <outletCollection property="cards" destination="Nud-Gp-rcD" collectionClass="NSMutableArray" id="fjW-Gk-UTV"/>
+                        <outletCollection property="cards" destination="BI1-S8-P5L" collectionClass="NSMutableArray" id="xsX-CA-kQb"/>
+                        <outletCollection property="cards" destination="Ytg-F2-Mai" collectionClass="NSMutableArray" id="gJr-XQ-4dt"/>
+                        <outletCollection property="cards" destination="SMf-7k-vMb" collectionClass="NSMutableArray" id="VIx-h5-oJj"/>
+                        <outletCollection property="cards" destination="NFd-cu-wYw" collectionClass="NSMutableArray" id="CMt-gJ-UqO"/>
+                        <outletCollection property="cards" destination="IfH-Vr-ozF" collectionClass="NSMutableArray" id="ohn-3X-rky"/>
+                        <outletCollection property="cards" destination="rSD-Dr-cTK" collectionClass="NSMutableArray" id="SEh-A1-bIL"/>
+                        <outletCollection property="cards" destination="5Xd-Xe-ySl" collectionClass="NSMutableArray" id="Bc7-Uc-W2s"/>
+                        <outletCollection property="cards" destination="O80-RJ-6eC" collectionClass="NSMutableArray" id="ZTM-vm-lHD"/>
+                        <outletCollection property="cards" destination="DTW-8K-rCB" collectionClass="NSMutableArray" id="acB-Ne-4Ur"/>
+                        <outletCollection property="cards" destination="eFa-SS-eEG" collectionClass="NSMutableArray" id="1PW-0n-mSy"/>
+                        <outletCollection property="cards" destination="4DJ-lm-8ty" collectionClass="NSMutableArray" id="ul7-PO-LuS"/>
+                        <outletCollection property="cards" destination="4O2-9U-5L1" collectionClass="NSMutableArray" id="tnG-Ca-g5w"/>
+                        <outletCollection property="cards" destination="BL1-NP-4sn" collectionClass="NSMutableArray" id="RUR-2e-UKv"/>
+                        <outletCollection property="cards" destination="Q0G-TH-AQm" collectionClass="NSMutableArray" id="eH3-sK-hpS"/>
+                        <outletCollection property="cards" destination="Ge1-5L-4gA" collectionClass="NSMutableArray" id="Mh7-Qb-hLs"/>
+                        <outletCollection property="cards" destination="xwR-NL-EQF" collectionClass="NSMutableArray" id="IBc-bX-68U"/>
+                        <outletCollection property="cards" destination="3u7-Ui-2wZ" collectionClass="NSMutableArray" id="cqb-uL-bQx"/>
+                        <outletCollection property="cards" destination="vqG-DH-6RX" collectionClass="NSMutableArray" id="dJn-v2-rSO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="330.39999999999998" y="92.203898050974516"/>
+            <point key="canvasLocation" x="329.43925233644859" y="92.008639308855294"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
