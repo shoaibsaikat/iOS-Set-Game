@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="bCk-Hr-c4S">
-                                <rect key="frame" x="32" y="47" width="364" height="715"/>
+                                <rect key="frame" x="9.3333333333333428" y="57" width="409.33333333333326" height="805"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iKi-S6-jGt">
-                                        <rect key="frame" x="0.0" y="0.0" width="364" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="409.33333333333331" height="115"/>
                                         <subviews>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Cge-Dh-8wR" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -32,7 +32,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="xwR-NL-EQF" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="96" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="107.33333333333334" y="0.0" width="87.333333333333343" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -40,7 +40,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3u7-Ui-2wZ" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="192" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="214.66666666666666" y="0.0" width="87.333333333333343" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -48,7 +48,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="vqG-DH-6RX" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="288" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="322" y="0.0" width="87.333333333333314" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -58,10 +58,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="v0F-GG-aIQ">
-                                        <rect key="frame" x="0.0" y="123" width="364" height="100"/>
+                                        <rect key="frame" x="0.0" y="138" width="409.33333333333331" height="115"/>
                                         <subviews>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="efI-Bh-UNM" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -69,7 +69,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="PsC-OE-Yn7" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="96" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="107.33333333333334" y="0.0" width="87.333333333333343" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -77,7 +77,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="rxa-FC-mzD" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="192" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="214.66666666666666" y="0.0" width="87.333333333333343" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -85,7 +85,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="qm5-DG-BFG" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="288" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="322" y="0.0" width="87.333333333333314" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -95,10 +95,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8f4-LV-odw">
-                                        <rect key="frame" x="0.0" y="246" width="364" height="100"/>
+                                        <rect key="frame" x="0.0" y="276" width="409.33333333333331" height="115"/>
                                         <subviews>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Nud-Gp-rcD" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -106,7 +106,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ge1-5L-4gA" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="96" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="107.33333333333334" y="0.0" width="87.333333333333343" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -114,7 +114,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BI1-S8-P5L" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="192" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="214.66666666666666" y="0.0" width="87.333333333333343" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -122,7 +122,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ytg-F2-Mai" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="288" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="322" y="0.0" width="87.333333333333314" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -132,10 +132,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bCr-dd-qWi">
-                                        <rect key="frame" x="0.0" y="369" width="364" height="100"/>
+                                        <rect key="frame" x="0.0" y="414" width="409.33333333333331" height="115"/>
                                         <subviews>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="SMf-7k-vMb" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -143,7 +143,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="NFd-cu-wYw" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="96" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="107.33333333333334" y="0.0" width="87.333333333333343" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -151,7 +151,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="IfH-Vr-ozF" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="192" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="214.66666666666666" y="0.0" width="87.333333333333343" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -159,7 +159,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="rSD-Dr-cTK" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="288" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="322" y="0.0" width="87.333333333333314" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -169,10 +169,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Qgk-N6-7UF">
-                                        <rect key="frame" x="0.0" y="492" width="364" height="100"/>
+                                        <rect key="frame" x="0.0" y="552" width="409.33333333333331" height="115"/>
                                         <subviews>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="5Xd-Xe-ySl" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -180,7 +180,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="O80-RJ-6eC" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="96" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="107.33333333333334" y="0.0" width="87.333333333333343" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -188,7 +188,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="DTW-8K-rCB" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="192" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="214.66666666666666" y="0.0" width="87.333333333333343" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -196,7 +196,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="eFa-SS-eEG" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="288" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="322" y="0.0" width="87.333333333333314" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -206,10 +206,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kWq-w0-RK2">
-                                        <rect key="frame" x="0.0" y="615" width="364" height="100"/>
+                                        <rect key="frame" x="0.0" y="690" width="409.33333333333331" height="115"/>
                                         <subviews>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="4DJ-lm-8ty" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -217,7 +217,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="4O2-9U-5L1" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="96" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="107.33333333333334" y="0.0" width="87.333333333333343" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -225,7 +225,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BL1-NP-4sn" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="192" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="214.66666666666666" y="0.0" width="87.333333333333343" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -233,7 +233,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Q0G-TH-AQm" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="288" y="0.0" width="76" height="100"/>
+                                                <rect key="frame" x="322" y="0.0" width="87.333333333333314" height="115"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -243,9 +243,6 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="715" id="yTG-RC-aLg"/>
-                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="gpS-IC-wj7">
                                 <rect key="frame" x="20" y="872" width="388" height="20"/>
@@ -267,18 +264,17 @@
                                         <color key="highlightedColor" systemColor="labelColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="bOw-go-U1r"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gpS-IC-wj7" secondAttribute="bottom" id="0U2-OG-lRT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bCk-Hr-c4S" secondAttribute="bottom" constant="30" id="0p7-Fy-KxA"/>
+                            <constraint firstItem="gpS-IC-wj7" firstAttribute="top" secondItem="bCk-Hr-c4S" secondAttribute="bottom" constant="10" id="E8C-ga-g0T"/>
                             <constraint firstItem="gpS-IC-wj7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xu9-ug-mR0"/>
                             <constraint firstItem="bCk-Hr-c4S" firstAttribute="centerX" secondItem="gpS-IC-wj7" secondAttribute="centerX" id="fqt-8X-RE0"/>
-                            <constraint firstItem="bCk-Hr-c4S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mL9-QT-yiS"/>
+                            <constraint firstItem="bCk-Hr-c4S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="mL9-QT-yiS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gpS-IC-wj7" secondAttribute="trailing" constant="20" id="sWj-NW-akQ"/>
                         </constraints>
                     </view>
