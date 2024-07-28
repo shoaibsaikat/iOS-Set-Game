@@ -47,6 +47,7 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="HR7-X2-rQk">
                                         <rect key="frame" x="0.0" y="0.0" width="755" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Eje-9k-N1p" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="70"/>
@@ -103,9 +104,30 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="Eje-9k-N1p"/>
+                                                <exclude reference="ZkP-8X-NXo"/>
+                                                <exclude reference="wVa-Cz-uLC"/>
+                                                <exclude reference="J89-hf-Idm"/>
+                                                <exclude reference="c99-4E-pm5"/>
+                                                <exclude reference="mP5-FP-hP2"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="subviews">
+                                                <include reference="Eje-9k-N1p"/>
+                                                <include reference="ZkP-8X-NXo"/>
+                                                <include reference="wVa-Cz-uLC"/>
+                                                <include reference="J89-hf-Idm"/>
+                                                <include reference="c99-4E-pm5"/>
+                                                <include reference="mP5-FP-hP2"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="pOs-Oa-Egp">
                                         <rect key="frame" x="0.0" y="85" width="755" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="1L9-gt-gsP" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="70"/>
@@ -162,9 +184,30 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="1L9-gt-gsP"/>
+                                                <exclude reference="pYs-nS-SD1"/>
+                                                <exclude reference="yTj-fn-yoy"/>
+                                                <exclude reference="Bqv-ob-A4R"/>
+                                                <exclude reference="6WI-Z7-bXF"/>
+                                                <exclude reference="Rn0-xn-w0W"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="subviews">
+                                                <include reference="1L9-gt-gsP"/>
+                                                <include reference="pYs-nS-SD1"/>
+                                                <include reference="yTj-fn-yoy"/>
+                                                <include reference="Bqv-ob-A4R"/>
+                                                <include reference="6WI-Z7-bXF"/>
+                                                <include reference="Rn0-xn-w0W"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="lhW-mW-yuH">
                                         <rect key="frame" x="0.0" y="170" width="755" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="RBR-dB-pmc" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="70"/>
@@ -221,9 +264,30 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="RBR-dB-pmc"/>
+                                                <exclude reference="ZVC-M7-pOa"/>
+                                                <exclude reference="ps9-6y-ZLH"/>
+                                                <exclude reference="GSd-rX-QYv"/>
+                                                <exclude reference="SNk-Kh-Ve2"/>
+                                                <exclude reference="Fx3-j1-2yZ"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="subviews">
+                                                <include reference="RBR-dB-pmc"/>
+                                                <include reference="ZVC-M7-pOa"/>
+                                                <include reference="ps9-6y-ZLH"/>
+                                                <include reference="GSd-rX-QYv"/>
+                                                <include reference="SNk-Kh-Ve2"/>
+                                                <include reference="Fx3-j1-2yZ"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="kLW-75-MMB">
                                         <rect key="frame" x="0.0" y="255" width="755" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="RNo-Wy-RMH" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="70"/>
@@ -280,8 +344,44 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="RNo-Wy-RMH"/>
+                                                <exclude reference="P97-9F-qzo"/>
+                                                <exclude reference="oq2-6R-mmG"/>
+                                                <exclude reference="ag5-qx-96j"/>
+                                                <exclude reference="MlP-Cs-Q4Q"/>
+                                                <exclude reference="ZsJ-zB-1YA"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="subviews">
+                                                <include reference="RNo-Wy-RMH"/>
+                                                <include reference="P97-9F-qzo"/>
+                                                <include reference="oq2-6R-mmG"/>
+                                                <include reference="ag5-qx-96j"/>
+                                                <include reference="MlP-Cs-Q4Q"/>
+                                                <include reference="ZsJ-zB-1YA"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                 </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="HR7-X2-rQk"/>
+                                        <exclude reference="pOs-Oa-Egp"/>
+                                        <exclude reference="lhW-mW-yuH"/>
+                                        <exclude reference="kLW-75-MMB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="HR7-X2-rQk"/>
+                                        <include reference="pOs-Oa-Egp"/>
+                                        <include reference="lhW-mW-yuH"/>
+                                        <include reference="kLW-75-MMB"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Dbp-yx-s5l">
                                 <rect key="frame" x="32" y="47" width="364" height="630"/>
@@ -374,6 +474,22 @@
                                                 </variation>
                                             </view>
                                         </subviews>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="Cge-Dh-8wR"/>
+                                                <exclude reference="43c-1e-QyB"/>
+                                                <exclude reference="5q7-za-cDG"/>
+                                                <exclude reference="HCa-VV-Aev"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="subviews">
+                                                <include reference="Cge-Dh-8wR"/>
+                                                <include reference="43c-1e-QyB"/>
+                                                <include reference="5q7-za-cDG"/>
+                                                <include reference="HCa-VV-Aev"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="LwK-ll-eYQ">
                                         <rect key="frame" x="0.0" y="108" width="364" height="90"/>
@@ -503,6 +619,22 @@
                                                 </variation>
                                             </view>
                                         </subviews>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="KnD-Py-zky"/>
+                                                <exclude reference="odP-Nf-8Am"/>
+                                                <exclude reference="PwM-D5-OiE"/>
+                                                <exclude reference="yoy-Cq-FBD"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="subviews">
+                                                <include reference="KnD-Py-zky"/>
+                                                <include reference="odP-Nf-8Am"/>
+                                                <include reference="PwM-D5-OiE"/>
+                                                <include reference="yoy-Cq-FBD"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="zep-Cz-5JD">
                                         <rect key="frame" x="0.0" y="216" width="364" height="90"/>
@@ -632,6 +764,22 @@
                                                 </variation>
                                             </view>
                                         </subviews>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="WbA-05-mUB"/>
+                                                <exclude reference="Yjl-iy-wkC"/>
+                                                <exclude reference="5iZ-vI-dEz"/>
+                                                <exclude reference="jkt-RU-QzS"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="subviews">
+                                                <include reference="WbA-05-mUB"/>
+                                                <include reference="Yjl-iy-wkC"/>
+                                                <include reference="5iZ-vI-dEz"/>
+                                                <include reference="jkt-RU-QzS"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="252-04-qMQ">
                                         <rect key="frame" x="0.0" y="324" width="364" height="90"/>
@@ -673,6 +821,22 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="uyY-yV-5sd"/>
+                                                <exclude reference="DWr-mh-eTp"/>
+                                                <exclude reference="vUR-cC-Dd3"/>
+                                                <exclude reference="wND-ga-mFg"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="subviews">
+                                                <include reference="uyY-yV-5sd"/>
+                                                <include reference="DWr-mh-eTp"/>
+                                                <include reference="vUR-cC-Dd3"/>
+                                                <include reference="wND-ga-mFg"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mv0-bp-cn4">
                                         <rect key="frame" x="0.0" y="432" width="364" height="90"/>
@@ -714,6 +878,22 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="hG4-cM-8QR"/>
+                                                <exclude reference="FVf-Tk-LTb"/>
+                                                <exclude reference="JLY-Wr-IVw"/>
+                                                <exclude reference="Hfu-02-JTP"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="subviews">
+                                                <include reference="hG4-cM-8QR"/>
+                                                <include reference="FVf-Tk-LTb"/>
+                                                <include reference="JLY-Wr-IVw"/>
+                                                <include reference="Hfu-02-JTP"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zcf-oj-Dre">
                                         <rect key="frame" x="0.0" y="540" width="364" height="90"/>
@@ -843,8 +1023,44 @@
                                                 </variation>
                                             </view>
                                         </subviews>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="EWS-Yk-gHJ"/>
+                                                <exclude reference="Qv7-dI-4ED"/>
+                                                <exclude reference="uj7-h3-9di"/>
+                                                <exclude reference="xiF-Fa-4YP"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="subviews">
+                                                <include reference="EWS-Yk-gHJ"/>
+                                                <include reference="Qv7-dI-4ED"/>
+                                                <include reference="uj7-h3-9di"/>
+                                                <include reference="xiF-Fa-4YP"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                 </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="YRh-oa-HHe"/>
+                                        <exclude reference="LwK-ll-eYQ"/>
+                                        <exclude reference="zep-Cz-5JD"/>
+                                        <exclude reference="252-04-qMQ"/>
+                                        <exclude reference="Mv0-bp-cn4"/>
+                                        <exclude reference="Zcf-oj-Dre"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="YRh-oa-HHe"/>
+                                        <include reference="LwK-ll-eYQ"/>
+                                        <include reference="zep-Cz-5JD"/>
+                                        <include reference="252-04-qMQ"/>
+                                        <include reference="Mv0-bp-cn4"/>
+                                        <include reference="Zcf-oj-Dre"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
