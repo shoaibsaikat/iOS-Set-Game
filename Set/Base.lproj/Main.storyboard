@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="gpS-IC-wj7">
-                                <rect key="frame" x="14" y="885" width="400" height="20"/>
+                                <rect key="frame" x="14" y="882" width="400" height="20"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSz-Cr-A5g">
                                         <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="20"/>
@@ -42,6 +42,247 @@
                                     <constraint firstAttribute="height" constant="20" id="dvh-Hw-Y4o"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4Tk-fm-BMV">
+                                <rect key="frame" x="85.666666666666686" y="47" width="755" height="325"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="HR7-X2-rQk">
+                                        <rect key="frame" x="0.0" y="0.0" width="755" height="70"/>
+                                        <subviews>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Eje-9k-N1p" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="9PS-rV-XdN"/>
+                                                    <constraint firstAttribute="height" constant="70" id="9eI-4V-jkd"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ZkP-8X-NXo" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="129" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="2Cf-kN-fhT"/>
+                                                    <constraint firstAttribute="height" constant="70" id="DFO-sS-tSB"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="wVa-Cz-uLC" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="258" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="0qn-Ep-O1I"/>
+                                                    <constraint firstAttribute="height" constant="70" id="20G-Uh-b5p"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="J89-hf-Idm" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="387" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="lR6-q9-HYG"/>
+                                                    <constraint firstAttribute="width" constant="110" id="pl1-2u-tQx"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="c99-4E-pm5" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="516" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="oZq-nS-pxS"/>
+                                                    <constraint firstAttribute="height" constant="70" id="rIw-dB-F9y"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="mP5-FP-hP2" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="645" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="1Ap-Mp-LZg"/>
+                                                    <constraint firstAttribute="width" constant="110" id="Btf-Ri-HqS"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="pOs-Oa-Egp">
+                                        <rect key="frame" x="0.0" y="85" width="755" height="70"/>
+                                        <subviews>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="1L9-gt-gsP" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="NsF-nO-95b"/>
+                                                    <constraint firstAttribute="width" constant="110" id="sJP-dW-NCG"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pYs-nS-SD1" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="129" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="VsW-fv-oGP"/>
+                                                    <constraint firstAttribute="width" constant="110" id="zvT-0L-qsg"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="yTj-fn-yoy" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="258" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="edk-rU-0bc"/>
+                                                    <constraint firstAttribute="width" constant="110" id="gV3-iA-MCM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Bqv-ob-A4R" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="387" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="eVG-1X-vzB"/>
+                                                    <constraint firstAttribute="height" constant="70" id="uMo-1i-NLY"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="6WI-Z7-bXF" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="516" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="VGj-eB-gdd"/>
+                                                    <constraint firstAttribute="height" constant="70" id="zcb-CW-nPx"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Rn0-xn-w0W" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="645" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="9vk-Vh-712"/>
+                                                    <constraint firstAttribute="width" constant="110" id="gBn-GK-CRO"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="lhW-mW-yuH">
+                                        <rect key="frame" x="0.0" y="170" width="755" height="70"/>
+                                        <subviews>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="RBR-dB-pmc" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="Ldl-ld-UtI"/>
+                                                    <constraint firstAttribute="height" constant="70" id="lFS-kX-OlL"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ZVC-M7-pOa" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="129" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="SWZ-Tn-ylz"/>
+                                                    <constraint firstAttribute="width" constant="110" id="ja4-68-8BX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ps9-6y-ZLH" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="258" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="a0D-me-ehL"/>
+                                                    <constraint firstAttribute="height" constant="70" id="kY7-FU-KJh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="GSd-rX-QYv" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="387" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="P6w-1i-fs8"/>
+                                                    <constraint firstAttribute="height" constant="70" id="ktU-wW-IfE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="SNk-Kh-Ve2" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="516" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="fZA-Q6-FAy"/>
+                                                    <constraint firstAttribute="width" constant="110" id="nUq-n1-ugd"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Fx3-j1-2yZ" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="645" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="Gvd-RG-t4S"/>
+                                                    <constraint firstAttribute="width" constant="110" id="VkA-QJ-NZt"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="kLW-75-MMB">
+                                        <rect key="frame" x="0.0" y="255" width="755" height="70"/>
+                                        <subviews>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="RNo-Wy-RMH" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="E4d-ks-g5A"/>
+                                                    <constraint firstAttribute="width" constant="110" id="fFy-wV-bnb"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="P97-9F-qzo" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="129" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="DDA-Sa-aNO"/>
+                                                    <constraint firstAttribute="width" constant="110" id="XOr-9Q-pBv"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="oq2-6R-mmG" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="258" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="aQl-4l-w2p"/>
+                                                    <constraint firstAttribute="width" constant="110" id="cjf-hN-b81"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ag5-qx-96j" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="387" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="j25-U3-11n"/>
+                                                    <constraint firstAttribute="width" constant="110" id="qfi-AO-ggN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="MlP-Cs-Q4Q" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="516" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="5n2-JE-rgQ"/>
+                                                    <constraint firstAttribute="width" constant="110" id="dg6-fI-ZjT"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ZsJ-zB-1YA" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="645" y="0.0" width="110" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="3TH-fs-QtK"/>
+                                                    <constraint firstAttribute="height" constant="70" id="cFG-an-VwB"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Dbp-yx-s5l">
                                 <rect key="frame" x="32" y="47" width="364" height="630"/>
                                 <subviews>
@@ -53,23 +294,13 @@
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="G1M-fV-2xG"/>
                                                     <constraint firstAttribute="height" constant="90" id="c3w-6G-cCd"/>
                                                     <constraint firstAttribute="width" constant="70" id="hXa-SZ-C15"/>
-                                                    <constraint firstAttribute="width" constant="110" id="i7h-Su-aZP"/>
                                                 </constraints>
                                                 <variation key="default">
                                                     <mask key="constraints">
-                                                        <exclude reference="G1M-fV-2xG"/>
                                                         <exclude reference="c3w-6G-cCd"/>
                                                         <exclude reference="hXa-SZ-C15"/>
-                                                        <exclude reference="i7h-Su-aZP"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="G1M-fV-2xG"/>
-                                                        <include reference="i7h-Su-aZP"/>
                                                     </mask>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=compact">
@@ -86,21 +317,11 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="2VE-tx-kz3"/>
                                                     <constraint firstAttribute="height" constant="90" id="alP-gi-Eiw"/>
-                                                    <constraint firstAttribute="width" constant="110" id="e64-mj-KZh"/>
-                                                    <constraint firstAttribute="height" constant="60" id="tYF-TQ-8Ad"/>
                                                 </constraints>
                                                 <variation key="default">
                                                     <mask key="constraints">
                                                         <exclude reference="2VE-tx-kz3"/>
                                                         <exclude reference="alP-gi-Eiw"/>
-                                                        <exclude reference="e64-mj-KZh"/>
-                                                        <exclude reference="tYF-TQ-8Ad"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="e64-mj-KZh"/>
-                                                        <include reference="tYF-TQ-8Ad"/>
                                                     </mask>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=compact">
@@ -115,23 +336,13 @@
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="110" id="6uD-3V-t39"/>
                                                     <constraint firstAttribute="width" constant="70" id="BXg-y0-9RD"/>
                                                     <constraint firstAttribute="height" constant="90" id="cSI-Wm-8B5"/>
-                                                    <constraint firstAttribute="height" constant="60" id="eae-ui-NHw"/>
                                                 </constraints>
                                                 <variation key="default">
                                                     <mask key="constraints">
-                                                        <exclude reference="6uD-3V-t39"/>
                                                         <exclude reference="BXg-y0-9RD"/>
                                                         <exclude reference="cSI-Wm-8B5"/>
-                                                        <exclude reference="eae-ui-NHw"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="6uD-3V-t39"/>
-                                                        <include reference="eae-ui-NHw"/>
                                                     </mask>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=compact">
@@ -147,22 +358,12 @@
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="90" id="4Xy-St-lYu"/>
-                                                    <constraint firstAttribute="width" constant="110" id="msn-9U-yh1"/>
                                                     <constraint firstAttribute="width" constant="70" id="nPX-NN-kjd"/>
-                                                    <constraint firstAttribute="height" constant="60" id="vOJ-pE-7Eg"/>
                                                 </constraints>
                                                 <variation key="default">
                                                     <mask key="constraints">
                                                         <exclude reference="4Xy-St-lYu"/>
-                                                        <exclude reference="msn-9U-yh1"/>
                                                         <exclude reference="nPX-NN-kjd"/>
-                                                        <exclude reference="vOJ-pE-7Eg"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="msn-9U-yh1"/>
-                                                        <include reference="vOJ-pE-7Eg"/>
                                                     </mask>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=compact">
@@ -441,30 +642,8 @@
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="90" id="1K3-dq-Go1"/>
-                                                    <constraint firstAttribute="width" constant="110" id="24F-jB-VmE"/>
-                                                    <constraint firstAttribute="height" constant="60" id="N6H-5N-Ddm"/>
                                                     <constraint firstAttribute="width" constant="70" id="tNF-fS-D89"/>
                                                 </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="1K3-dq-Go1"/>
-                                                        <exclude reference="24F-jB-VmE"/>
-                                                        <exclude reference="N6H-5N-Ddm"/>
-                                                        <exclude reference="tNF-fS-D89"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="24F-jB-VmE"/>
-                                                        <include reference="N6H-5N-Ddm"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <mask key="constraints">
-                                                        <include reference="1K3-dq-Go1"/>
-                                                        <include reference="tNF-fS-D89"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="DWr-mh-eTp" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="98" y="0.0" width="70" height="90"/>
@@ -472,92 +651,26 @@
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="Alm-uG-e0A"/>
-                                                    <constraint firstAttribute="width" constant="110" id="bd0-I2-CRr"/>
                                                     <constraint firstAttribute="height" constant="90" id="f1W-wt-ps4"/>
-                                                    <constraint firstAttribute="height" constant="60" id="zcf-Dq-RWA"/>
                                                 </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="Alm-uG-e0A"/>
-                                                        <exclude reference="bd0-I2-CRr"/>
-                                                        <exclude reference="f1W-wt-ps4"/>
-                                                        <exclude reference="zcf-Dq-RWA"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="bd0-I2-CRr"/>
-                                                        <include reference="zcf-Dq-RWA"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <mask key="constraints">
-                                                        <include reference="Alm-uG-e0A"/>
-                                                        <include reference="f1W-wt-ps4"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="vUR-cC-Dd3" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="196" y="0.0" width="70" height="90"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="110" id="1aY-B6-8Zp"/>
-                                                    <constraint firstAttribute="height" constant="60" id="QXR-JT-Z9R"/>
                                                     <constraint firstAttribute="width" constant="70" id="Sli-Qm-Smq"/>
                                                     <constraint firstAttribute="height" constant="90" id="f9X-Vo-dGi"/>
                                                 </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="1aY-B6-8Zp"/>
-                                                        <exclude reference="QXR-JT-Z9R"/>
-                                                        <exclude reference="Sli-Qm-Smq"/>
-                                                        <exclude reference="f9X-Vo-dGi"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="1aY-B6-8Zp"/>
-                                                        <include reference="QXR-JT-Z9R"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <mask key="constraints">
-                                                        <include reference="Sli-Qm-Smq"/>
-                                                        <include reference="f9X-Vo-dGi"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="wND-ga-mFg" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="294" y="0.0" width="70" height="90"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="110" id="6EN-pP-KdU"/>
                                                     <constraint firstAttribute="width" constant="70" id="Kcc-Gj-JAg"/>
                                                     <constraint firstAttribute="height" constant="90" id="WRR-yD-U9v"/>
-                                                    <constraint firstAttribute="height" constant="60" id="ger-37-Ti3"/>
                                                 </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="6EN-pP-KdU"/>
-                                                        <exclude reference="Kcc-Gj-JAg"/>
-                                                        <exclude reference="WRR-yD-U9v"/>
-                                                        <exclude reference="ger-37-Ti3"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="6EN-pP-KdU"/>
-                                                        <include reference="ger-37-Ti3"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <mask key="constraints">
-                                                        <include reference="Kcc-Gj-JAg"/>
-                                                        <include reference="WRR-yD-U9v"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
                                         </subviews>
                                     </stackView>
@@ -569,31 +682,9 @@
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="110" id="36A-m9-RLq"/>
-                                                    <constraint firstAttribute="height" constant="60" id="EKR-S3-W5m"/>
                                                     <constraint firstAttribute="height" constant="90" id="O8d-o9-3zK"/>
                                                     <constraint firstAttribute="width" constant="70" id="mQB-Nj-Swe"/>
                                                 </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="36A-m9-RLq"/>
-                                                        <exclude reference="EKR-S3-W5m"/>
-                                                        <exclude reference="O8d-o9-3zK"/>
-                                                        <exclude reference="mQB-Nj-Swe"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="36A-m9-RLq"/>
-                                                        <include reference="EKR-S3-W5m"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <mask key="constraints">
-                                                        <include reference="O8d-o9-3zK"/>
-                                                        <include reference="mQB-Nj-Swe"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="FVf-Tk-LTb" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="98" y="0.0" width="70" height="90"/>
@@ -601,92 +692,26 @@
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="90" id="7HN-s2-DdI"/>
-                                                    <constraint firstAttribute="height" constant="60" id="7Ur-IQ-2Uw"/>
                                                     <constraint firstAttribute="width" constant="70" id="Vzm-Qn-cgt"/>
-                                                    <constraint firstAttribute="width" constant="110" id="W3w-9d-yGf"/>
                                                 </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="7HN-s2-DdI"/>
-                                                        <exclude reference="7Ur-IQ-2Uw"/>
-                                                        <exclude reference="Vzm-Qn-cgt"/>
-                                                        <exclude reference="W3w-9d-yGf"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="7Ur-IQ-2Uw"/>
-                                                        <include reference="W3w-9d-yGf"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <mask key="constraints">
-                                                        <include reference="7HN-s2-DdI"/>
-                                                        <include reference="Vzm-Qn-cgt"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="JLY-Wr-IVw" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="196" y="0.0" width="70" height="90"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="Sje-hE-s9A"/>
                                                     <constraint firstAttribute="height" constant="90" id="Twc-gS-47M"/>
                                                     <constraint firstAttribute="width" constant="70" id="gwM-Lw-odr"/>
-                                                    <constraint firstAttribute="width" constant="110" id="lg6-N3-OG9"/>
                                                 </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="Sje-hE-s9A"/>
-                                                        <exclude reference="Twc-gS-47M"/>
-                                                        <exclude reference="gwM-Lw-odr"/>
-                                                        <exclude reference="lg6-N3-OG9"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="Sje-hE-s9A"/>
-                                                        <include reference="lg6-N3-OG9"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <mask key="constraints">
-                                                        <include reference="Twc-gS-47M"/>
-                                                        <include reference="gwM-Lw-odr"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
                                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Hfu-02-JTP" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                 <rect key="frame" x="294" y="0.0" width="70" height="90"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="110" id="2Uj-eM-gWZ"/>
                                                     <constraint firstAttribute="width" constant="70" id="aZl-1F-mgk"/>
-                                                    <constraint firstAttribute="height" constant="60" id="wK3-Ef-piW"/>
                                                     <constraint firstAttribute="height" constant="90" id="wn1-ea-iGd"/>
                                                 </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="2Uj-eM-gWZ"/>
-                                                        <exclude reference="aZl-1F-mgk"/>
-                                                        <exclude reference="wK3-Ef-piW"/>
-                                                        <exclude reference="wn1-ea-iGd"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="2Uj-eM-gWZ"/>
-                                                        <include reference="wK3-Ef-piW"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <mask key="constraints">
-                                                        <include reference="aZl-1F-mgk"/>
-                                                        <include reference="wn1-ea-iGd"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
                                         </subviews>
                                     </stackView>
@@ -825,11 +850,43 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
-                            <constraint firstItem="gpS-IC-wj7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="13" id="MCN-ri-ta4"/>
+                            <constraint firstItem="gpS-IC-wj7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="MCN-ri-ta4"/>
+                            <constraint firstItem="4Tk-fm-BMV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="haz-X6-qE5"/>
                             <constraint firstItem="Dbp-yx-s5l" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="i4j-qv-2We"/>
+                            <constraint firstItem="4Tk-fm-BMV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nXl-u9-hKL"/>
                             <constraint firstItem="gpS-IC-wj7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pGS-lw-Zjk"/>
                             <constraint firstItem="Dbp-yx-s5l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sGz-bD-hP2"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4Tk-fm-BMV"/>
+                                <exclude reference="Dbp-yx-s5l"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="haz-X6-qE5"/>
+                                <exclude reference="nXl-u9-hKL"/>
+                                <exclude reference="i4j-qv-2We"/>
+                                <exclude reference="sGz-bD-hP2"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="4Tk-fm-BMV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="haz-X6-qE5"/>
+                                <include reference="nXl-u9-hKL"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Dbp-yx-s5l"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="i4j-qv-2We"/>
+                                <include reference="sGz-bD-hP2"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="matchedSetLabel" destination="Ws9-O8-2eH" id="6gQ-EQ-6XA"/>
@@ -857,11 +914,35 @@
                         <outletCollection property="cards" destination="Qv7-dI-4ED" collectionClass="NSMutableArray" id="m5k-Nn-Feb"/>
                         <outletCollection property="cards" destination="uj7-h3-9di" collectionClass="NSMutableArray" id="r4J-vc-iiX"/>
                         <outletCollection property="cards" destination="xiF-Fa-4YP" collectionClass="NSMutableArray" id="CEs-DO-yqf"/>
+                        <outletCollection property="cards" destination="Eje-9k-N1p" collectionClass="NSMutableArray" id="2GI-6N-b65"/>
+                        <outletCollection property="cards" destination="ZkP-8X-NXo" collectionClass="NSMutableArray" id="dTk-Vv-si0"/>
+                        <outletCollection property="cards" destination="wVa-Cz-uLC" collectionClass="NSMutableArray" id="eBN-pr-G3X"/>
+                        <outletCollection property="cards" destination="J89-hf-Idm" collectionClass="NSMutableArray" id="nH4-d1-ft5"/>
+                        <outletCollection property="cards" destination="c99-4E-pm5" collectionClass="NSMutableArray" id="2pB-ae-wBd"/>
+                        <outletCollection property="cards" destination="mP5-FP-hP2" collectionClass="NSMutableArray" id="yUl-GV-5KK"/>
+                        <outletCollection property="cards" destination="1L9-gt-gsP" collectionClass="NSMutableArray" id="cIx-bn-NF2"/>
+                        <outletCollection property="cards" destination="pYs-nS-SD1" collectionClass="NSMutableArray" id="ST4-vH-4R8"/>
+                        <outletCollection property="cards" destination="yTj-fn-yoy" collectionClass="NSMutableArray" id="xti-1k-a3r"/>
+                        <outletCollection property="cards" destination="Bqv-ob-A4R" collectionClass="NSMutableArray" id="LUu-fS-s3p"/>
+                        <outletCollection property="cards" destination="6WI-Z7-bXF" collectionClass="NSMutableArray" id="zdE-XF-cYf"/>
+                        <outletCollection property="cards" destination="Rn0-xn-w0W" collectionClass="NSMutableArray" id="1vU-7M-oFO"/>
+                        <outletCollection property="cards" destination="RBR-dB-pmc" collectionClass="NSMutableArray" id="QM2-wD-vaW"/>
+                        <outletCollection property="cards" destination="ZVC-M7-pOa" collectionClass="NSMutableArray" id="wGQ-Oq-OUo"/>
+                        <outletCollection property="cards" destination="ps9-6y-ZLH" collectionClass="NSMutableArray" id="3cS-57-r6p"/>
+                        <outletCollection property="cards" destination="GSd-rX-QYv" collectionClass="NSMutableArray" id="dsy-pg-t1e"/>
+                        <outletCollection property="cards" destination="SNk-Kh-Ve2" collectionClass="NSMutableArray" id="pc1-vg-Wc2"/>
+                        <outletCollection property="cards" destination="Fx3-j1-2yZ" collectionClass="NSMutableArray" id="cMX-xU-eRC"/>
+                        <outletCollection property="cards" destination="RNo-Wy-RMH" collectionClass="NSMutableArray" id="Tg7-6u-pWi"/>
+                        <outletCollection property="cards" destination="P97-9F-qzo" collectionClass="NSMutableArray" id="Wrr-89-qfV"/>
+                        <outletCollection property="cards" destination="oq2-6R-mmG" collectionClass="NSMutableArray" id="qdH-O0-Adj"/>
+                        <outletCollection property="cards" destination="ag5-qx-96j" collectionClass="NSMutableArray" id="0zW-fC-ees"/>
+                        <outletCollection property="cards" destination="MlP-Cs-Q4Q" collectionClass="NSMutableArray" id="knI-vf-G3c"/>
+                        <outletCollection property="cards" destination="ZsJ-zB-1YA" collectionClass="NSMutableArray" id="dor-bx-JlG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="328.03738317757006" y="90.712742980561558"/>
+            <point key="canvasLocation" x="327.86177105831536" y="89.719626168224295"/>
         </scene>
     </scenes>
     <resources>
