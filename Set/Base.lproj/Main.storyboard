@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Set" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gpS-IC-wj7">
-                                <rect key="frame" x="89" y="842" width="250" height="50"/>
+                                <rect key="frame" x="202" y="375" width="250" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSz-Cr-A5g">
                                         <rect key="frame" x="0.0" y="0.0" width="121" height="50"/>
@@ -44,52 +44,58 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0t6-0e-mxh">
-                                <rect key="frame" x="8" y="55" width="412" height="779"/>
+                                <rect key="frame" x="16" y="63" width="622" height="296"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vpp-vX-Vv0">
-                                        <rect key="frame" x="0.0" y="0.0" width="412" height="448"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="412" height="296"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="usG-qX-AoZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="412" height="68"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGC-Lu-T6U" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="LGC-Lu-T6U" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euH-eX-WvY" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="euH-eX-WvY" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="105" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aS2-Gt-jxU" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="aS2-Gt-jxU" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="210" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8t-IP-xnh" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="h8t-IP-xnh" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="315" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="412" id="5py-b6-OP9"/>
+                                                    <constraint firstItem="h8t-IP-xnh" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="Bro-US-wNE"/>
+                                                    <constraint firstItem="euH-eX-WvY" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="UQo-ic-fyM"/>
+                                                    <constraint firstItem="aS2-Gt-jxU" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="dGm-Aj-92t"/>
+                                                    <constraint firstItem="aS2-Gt-jxU" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="oB8-31-EG3"/>
+                                                    <constraint firstItem="h8t-IP-xnh" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="raG-Lk-oxT"/>
                                                     <constraint firstAttribute="height" constant="68" id="vVR-dA-B5c"/>
+                                                    <constraint firstItem="euH-eX-WvY" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="vuF-bi-VKg"/>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KUP-ah-eZu">
                                                 <rect key="frame" x="0.0" y="76" width="412" height="68"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m47-1v-uCg" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="m47-1v-uCg" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2P-eF-Iku" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Y2P-eF-Iku" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="105" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUk-hL-YeN" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="UUk-hL-YeN" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="210" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPE-6g-LfQ" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="mPE-6g-LfQ" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="315" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
@@ -102,19 +108,19 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4HK-sa-RLe">
                                                 <rect key="frame" x="0.0" y="152" width="412" height="68"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MT-ZA-OBR" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7MT-ZA-OBR" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egW-8P-Top" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="egW-8P-Top" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="105" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVd-aM-4Do" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="DVd-aM-4Do" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="210" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HiG-dL-U4C" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="HiG-dL-U4C" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="315" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
@@ -127,19 +133,19 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bTJ-bE-gYV">
                                                 <rect key="frame" x="0.0" y="228" width="412" height="68"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wk-Ts-SFv" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="9wk-Ts-SFv" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLw-0U-jXL" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="WLw-0U-jXL" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="105" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHH-ES-E1W" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="aHH-ES-E1W" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="210" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZV-wT-WOu" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="UZV-wT-WOu" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="315" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
@@ -150,21 +156,21 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HZi-MQ-jys">
-                                                <rect key="frame" x="0.0" y="304" width="412" height="68"/>
+                                                <rect key="frame" x="0.0" y="300" width="412" height="68"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVi-s4-aob" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="FVi-s4-aob" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIJ-RX-ZvX" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="RIJ-RX-ZvX" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="105" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejB-LH-0Ac" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ejB-LH-0Ac" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="210" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksN-l3-61Z" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ksN-l3-61Z" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="315" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
@@ -176,21 +182,21 @@
                                                 <variation key="heightClass=compact" hidden="YES"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1Fc-cZ-VCB">
-                                                <rect key="frame" x="0.0" y="380" width="412" height="68"/>
+                                                <rect key="frame" x="0.0" y="300" width="412" height="68"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yI-dO-cpf" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="8yI-dO-cpf" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGR-o7-sM9" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="YGR-o7-sM9" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="105" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3JL-tC-LkA" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3JL-tC-LkA" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="210" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5N-8V-lTl" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="z5N-8V-lTl" customClass="SetCardView" customModule="Set" customModuleProvider="target">
                                                         <rect key="frame" x="315" y="0.0" width="97" height="68"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
@@ -202,63 +208,119 @@
                                                 <variation key="heightClass=compact" hidden="YES"/>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Y2P-eF-Iku" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="0Mv-Hc-8ZR"/>
+                                            <constraint firstItem="HiG-dL-U4C" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="1un-7n-hgx"/>
+                                            <constraint firstItem="UZV-wT-WOu" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="5j5-9n-4uU"/>
+                                            <constraint firstItem="mPE-6g-LfQ" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="8dZ-BQ-yqL"/>
+                                            <constraint firstItem="z5N-8V-lTl" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="BMe-j6-MgF"/>
+                                            <constraint firstItem="8yI-dO-cpf" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="CdJ-eT-uTe"/>
+                                            <constraint firstItem="z5N-8V-lTl" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="F4a-Gv-5Xm"/>
+                                            <constraint firstItem="egW-8P-Top" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="FGl-oa-4Rg"/>
+                                            <constraint firstItem="DVd-aM-4Do" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="G2H-De-KMv"/>
+                                            <constraint firstItem="HiG-dL-U4C" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="GLx-kK-9hU"/>
+                                            <constraint firstItem="7MT-ZA-OBR" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="GdN-Ka-BRm"/>
+                                            <constraint firstItem="9wk-Ts-SFv" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="H3c-uL-woc"/>
+                                            <constraint firstItem="RIJ-RX-ZvX" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="JUq-Ru-PkE"/>
+                                            <constraint firstItem="ksN-l3-61Z" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="Kd4-2p-Eqr"/>
+                                            <constraint firstItem="WLw-0U-jXL" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="L9J-QW-ivG"/>
+                                            <constraint firstItem="7MT-ZA-OBR" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="MME-uA-rLa"/>
+                                            <constraint firstItem="UUk-hL-YeN" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="MVD-Kq-5Zq"/>
+                                            <constraint firstItem="egW-8P-Top" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="Moa-0y-trk"/>
+                                            <constraint firstItem="ksN-l3-61Z" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="NiP-RR-WsW"/>
+                                            <constraint firstItem="m47-1v-uCg" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="QdW-8N-pVF"/>
+                                            <constraint firstItem="DVd-aM-4Do" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="RZY-QW-g1M"/>
+                                            <constraint firstItem="3JL-tC-LkA" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="U6N-TF-KkR"/>
+                                            <constraint firstItem="Y2P-eF-Iku" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="UFG-zw-BLy"/>
+                                            <constraint firstItem="ejB-LH-0Ac" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="UJz-wN-8Pq"/>
+                                            <constraint firstItem="aHH-ES-E1W" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="VOY-0e-nOO"/>
+                                            <constraint firstItem="YGR-o7-sM9" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="a0o-Fe-IFX"/>
+                                            <constraint firstItem="mPE-6g-LfQ" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="aRS-x2-0JD"/>
+                                            <constraint firstItem="ejB-LH-0Ac" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="akW-4Z-wx5"/>
+                                            <constraint firstItem="RIJ-RX-ZvX" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="bVX-ii-ail"/>
+                                            <constraint firstItem="8yI-dO-cpf" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="hRf-Xm-cZe"/>
+                                            <constraint firstItem="UUk-hL-YeN" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="jGO-he-Oba"/>
+                                            <constraint firstItem="YGR-o7-sM9" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="lE8-p5-v6l"/>
+                                            <constraint firstItem="WLw-0U-jXL" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="mIK-sN-r9u"/>
+                                            <constraint firstItem="9wk-Ts-SFv" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="oaa-Ah-blA"/>
+                                            <constraint firstItem="3JL-tC-LkA" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="oo6-XC-hmD"/>
+                                            <constraint firstItem="aHH-ES-E1W" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="rUW-IB-7Bn"/>
+                                            <constraint firstItem="UZV-wT-WOu" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="rfB-af-dRJ"/>
+                                            <constraint firstItem="m47-1v-uCg" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="rrg-E0-xkm"/>
+                                            <constraint firstItem="FVi-s4-aob" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="wTk-Y2-OPv"/>
+                                            <constraint firstItem="FVi-s4-aob" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="zCI-mN-WUA"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="g9a-5e-due">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="296"/>
+                                        <rect key="frame" x="420" y="0.0" width="97" height="296"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ka-ae-SGa" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="68"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="4Ka-ae-SGa" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="97" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhN-2M-UC9" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="76" width="0.0" height="68"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="QhN-2M-UC9" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="76" width="97" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LiV-TQ-3H7" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="152" width="0.0" height="68"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="LiV-TQ-3H7" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="152" width="97" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVy-u6-W3U" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="228" width="0.0" height="68"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ZVy-u6-W3U" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="228" width="97" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                         </subviews>
                                         <variation key="heightClass=regular" hidden="YES"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4et-A7-u9D">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="296"/>
+                                        <rect key="frame" x="525" y="0.0" width="97" height="296"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTO-RV-luS" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="68"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="FTO-RV-luS" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="97" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqv-Df-LYW" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="76" width="0.0" height="68"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="sqv-Df-LYW" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="76" width="97" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPq-GL-Kd3" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="152" width="0.0" height="68"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="EPq-GL-Kd3" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="152" width="97" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDb-OR-AJn" customClass="SetCardView" customModule="Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="228" width="0.0" height="68"/>
+                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="zDb-OR-AJn" customClass="SetCardView" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="228" width="97" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                         </subviews>
                                         <variation key="heightClass=regular" hidden="YES"/>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="zDb-OR-AJn" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="5jS-6m-kZK"/>
+                                    <constraint firstItem="sqv-Df-LYW" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="6Br-C5-Zf9"/>
+                                    <constraint firstItem="4Ka-ae-SGa" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="Aj3-qy-T3U"/>
+                                    <constraint firstItem="EPq-GL-Kd3" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="MKp-C3-rrA"/>
+                                    <constraint firstItem="ZVy-u6-W3U" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="OYR-Ya-GZt"/>
+                                    <constraint firstItem="FTO-RV-luS" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="a2J-fm-qqI"/>
+                                    <constraint firstItem="ZVy-u6-W3U" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="aiD-NN-Qww"/>
+                                    <constraint firstItem="FTO-RV-luS" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="fSs-yz-Z7P"/>
+                                    <constraint firstItem="EPq-GL-Kd3" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="gRX-qZ-toF"/>
+                                    <constraint firstItem="4Ka-ae-SGa" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="s7J-wi-QMR"/>
+                                    <constraint firstItem="sqv-Df-LYW" firstAttribute="width" secondItem="LGC-Lu-T6U" secondAttribute="width" id="yQp-ND-Jsh"/>
+                                    <constraint firstItem="zDb-OR-AJn" firstAttribute="height" secondItem="LGC-Lu-T6U" secondAttribute="height" id="z5O-ax-29t"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
-                            <constraint firstItem="0t6-0e-mxh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="8fM-YA-3xo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0t6-0e-mxh" secondAttribute="trailing" constant="8" id="9eo-cD-sef"/>
-                            <constraint firstItem="gpS-IC-wj7" firstAttribute="top" secondItem="0t6-0e-mxh" secondAttribute="bottom" constant="8" id="JMI-9J-UjF"/>
+                            <constraint firstItem="0t6-0e-mxh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8fM-YA-3xo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0t6-0e-mxh" secondAttribute="trailing" constant="16" id="9eo-cD-sef"/>
+                            <constraint firstItem="gpS-IC-wj7" firstAttribute="top" secondItem="0t6-0e-mxh" secondAttribute="bottom" constant="16" id="JMI-9J-UjF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gpS-IC-wj7" secondAttribute="bottom" id="RSk-kS-zVc"/>
                             <constraint firstItem="gpS-IC-wj7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hdy-io-jTo"/>
-                            <constraint firstItem="0t6-0e-mxh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="nyp-TD-pmk"/>
+                            <constraint firstItem="0t6-0e-mxh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="nyp-TD-pmk"/>
                             <constraint firstItem="0t6-0e-mxh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rGh-fd-2aD"/>
                         </constraints>
                     </view>
