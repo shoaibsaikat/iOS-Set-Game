@@ -69,6 +69,10 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="412" id="5py-b6-OP9"/>
+                                                    <constraint firstAttribute="height" constant="68" id="vVR-dA-B5c"/>
+                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KUP-ah-eZu">
                                                 <rect key="frame" x="0.0" y="76" width="412" height="68"/>
@@ -90,6 +94,10 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="68" id="IbX-vU-C0h"/>
+                                                    <constraint firstAttribute="width" constant="412" id="wXR-0a-n6R"/>
+                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4HK-sa-RLe">
                                                 <rect key="frame" x="0.0" y="152" width="412" height="68"/>
@@ -111,6 +119,10 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="68" id="pJe-gh-tuR"/>
+                                                    <constraint firstAttribute="width" constant="412" id="yxE-bT-MWr"/>
+                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bTJ-bE-gYV">
                                                 <rect key="frame" x="0.0" y="228" width="412" height="68"/>
@@ -132,6 +144,10 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="68" id="RUr-Nd-wNZ"/>
+                                                    <constraint firstAttribute="width" constant="412" id="b3y-Fq-xEb"/>
+                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HZi-MQ-jys">
                                                 <rect key="frame" x="0.0" y="304" width="412" height="68"/>
@@ -153,6 +169,10 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="68" id="UG4-iu-q7S"/>
+                                                    <constraint firstAttribute="width" constant="412" id="p1C-2J-oek"/>
+                                                </constraints>
                                                 <variation key="heightClass=compact" hidden="YES"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1Fc-cZ-VCB">
@@ -175,6 +195,10 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="68" id="QrF-CA-WUX"/>
+                                                    <constraint firstAttribute="width" constant="412" id="t6u-Nn-3Il"/>
+                                                </constraints>
                                                 <variation key="heightClass=compact" hidden="YES"/>
                                             </stackView>
                                         </subviews>
