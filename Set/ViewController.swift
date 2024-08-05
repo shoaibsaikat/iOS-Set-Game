@@ -30,10 +30,10 @@ class ViewController: UIViewController, SetCardParent {
     @IBOutlet var cards: [SetCardView]! {
         didSet {
             for card in cards {
+                // hide all cards by default
                 card.backgroundColor = UIColor(white: 0, alpha: 0)
                 let tap = UITapGestureRecognizer(target: card, action: #selector(card.cardTapped(_:)))
                 card.addGestureRecognizer(tap)
-                
             }
         }
     }
